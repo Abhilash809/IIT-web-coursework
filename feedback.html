@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Feedback Form</title>
+    <link rel="stylesheet" href="feedback.css">
 </head>
 <body>
-    <form action="index.php" method="get">
+    <form action="index.php" method="post" enctype="multipart/form-data">
          
         <label for ="Fullname">Full Name</label>
         <input type="text" id="Fullname"  minlength="4" required><br>
@@ -25,25 +26,31 @@
         <input type="text" id="address"><br>
 
         <br>
-        <label for="comment">Comment or Message</label>
-        <input type="text" id="comment"><br>
+        <label for="comment">Comment or Message</label><br>
+        <textarea id="comment" rows="3" cols="25"></textarea><br>
+
+        <label>Was this your first time visiting?</label>
+        <div class="radio-group">
+            <input type="radio" id="q1yes" name="q1" value="Yes">
+            <label for="q1yes">Yes</label>
+        
+            <input type="radio" id="q1no" name="q1" value="No">
+            <label for="q1no">No</label>
+        </div><br>
+        
+        <label>Would you recommend our service?</label>
+        <div class="radio-group">
+            <input type="radio" id="q2yes" name="q2" value="Yes">
+            <label for="q2yes">Yes</label>
+        
+            <input type="radio" id="q2no" name="q2" value="No">
+            <label for="q2no">No</label>
+        </div><br>
+        
 
         <br>
-        <label for ="q1">Was this is your first time visiting</label>
-        
-        <label for="Yes" >Yes</label>
-        <input type="radio" id="Yes" value="Yes" name="q1"></inpt>
-        <label for="No" >No</label>
-        <input type="radio" id="No" value="No" name="q1"></inpt><br>
-
-        <br>
-        <label for ="q2">Would you reccomend our service</label>
-        
-        <label for="Yes" >Yes</label>
-        <input type="radio" id="Yes" value="Yes" name="q2"></inpt>
-        <label for="No" >No</label>
-        <input type="radio" id="No" value="No" name="q2"></inpt><br>
-
+        <label for ="file">file:</label>
+        <input type="file" id="file" ><br>
 
         <br>
         <input type="reset"><br>
