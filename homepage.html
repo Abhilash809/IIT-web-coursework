@@ -6,14 +6,92 @@
     <title>Home page</title>
   </head>
   <body>
-    <h1>Zero Hunger</h1>
+    <h1>Zero Hunger: A Shared Responsibility</h1>
     <header>
-      <nav>
-        <li>Home</li>
-        <li>Contact</li>
-        <li>Our Team</li>
-        <li>Donations</li>
-      </nav>
+      <div class="navbar">
+        <div class="logo-title">
+          <img src="images/logo.png" alt="Zero Hunger Logo" class="logo" />
+          <h1>Zero Hunger Sri Lanka</h1>
+        </div>
+        <nav>
+          <ul class="nav-links">
+            <li><a href="home.html" class="active">Home</a></li>
+            <li><a href="volunteer.html">Volunteer</a></li>
+            <li><a href="table.html">Table</a></li>
+            <li><a href="feedback.html">Feedback</a></li>
+            <li><a href="profile.html">User Profile</a></li>
+            <li><a href="team.html">Team</a></li>
+            <li><a href="sitemap.html">Sitemap</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
+
+    <style>
+      
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      header {
+        background-color: #f4d03f; 
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 1000;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+
+      .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 40px;
+        max-width: 1200px;
+        margin: auto;
+      }
+
+      .logo-title {
+        display: flex;
+        align-items: center;
+      }
+
+      .logo {
+        height: 40px;
+        width: 40px;
+        margin-right: 10px;
+      }
+
+      .logo-title h1 {
+        font-size: 22px;
+        color: #2c3e50; 
+      }
+
+      .nav-links {
+        list-style: none;
+        display: flex;
+        gap: 25px;
+      }
+
+      .nav-links li a {
+        text-decoration: none;
+        font-size: 16px;
+        color: #2c3e50;
+        padding: 5px 10px;
+        transition: all 0.3s ease;
+        border-bottom: 2px solid transparent;
+      }
+
+      .nav-links li a:hover {
+        border-bottom: 2px solid #e67e22; 
+      }
+
+      .nav-links li a.active {
+        font-weight: bold;
+        border-bottom: 2px solid #e67e22;
+      }
+    </style>
   </body>
 </html>
