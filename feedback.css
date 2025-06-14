@@ -1,4 +1,3 @@
-/* style.css */
 body {
     font-family: Arial, sans-serif;
     background-color: #f2f2f2;
@@ -24,6 +23,7 @@ input[type="text"],
 input[type="email"],
 input[type="tel"],
 input[type="file"],
+input[type="date"],
 textarea {
     width: 100%;
     padding: 8px;
@@ -47,6 +47,21 @@ input[type="radio"] {
     align-items: center;
     margin-top: 5px;
 }
+
+
+select {
+    padding: 8px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    font-size: 16px;
+  }
+  
+
+  select:hover {
+    border-color: #888;
+  }
 
 .star-rating {
     direction: rtl;

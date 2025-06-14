@@ -8,7 +8,8 @@
 </head>
 <body>
     <form action="index.php" method="post" enctype="multipart/form-data">
-         
+         <br>
+         <br>
         <label for ="Fullname">Full Name</label>
         <input type="text" id="Fullname"  minlength="4" required><br>
 
@@ -29,6 +30,28 @@
         <label for="comment">Comment or Message</label><br>
         <textarea id="comment" rows="3" cols="25"></textarea><br>
 
+        <br>
+        <label for="Date">Date of Feedback?</label>
+        <input type="date" id="Date"><br>
+
+        <br>
+        <label>Your Role in Fighting Hunger?</label>
+        <div class="radio-group">
+            <input type="radio" id="q3a1" name="q3" value="Volunteer">
+            <label for="q3a1">Volunteer</label>
+        
+            <input type="radio" id="q3a2" name="q3" value="Donor">
+            <label for="q3a2">Donor</label>
+
+            <input type="radio" id="q3a3" name="q3" value="Beneficiary (food recipient)">
+            <label for="q3a3">Beneficiary (food recipient)</label>
+
+            <input type="radio" id="q3a4" name="q3" value="Donor">
+            <label for="q3a4">Researcher</label>
+        </div>
+
+
+        <br>
         <label>Was this your first time visiting?</label>
         <div class="radio-group">
             <input type="radio" id="q1yes" name="q1" value="Yes">
@@ -38,6 +61,28 @@
             <label for="q1no">No</label>
         </div><br>
         
+    
+        <label for="hear-about">How did you hear about us?</label>
+            <select id="hear-about" name="hear_about" required>
+                <option value="" disabled selected>Select an option...</option> 
+                <option value="social-media">Social Media</option>
+                <option value="food-bank">Food Bank Referral</option>
+                <option value="volunteer">Volunteer Program</option>
+                <option value="other">Other</option>
+            </select><br>
+            <br>
+        
+        <label for="issue">What issues matter most?</label>
+            <select id="issue" name="issue" required>
+                <option value="" disabled selected>Select an option...</option> 
+                <option value="food-waste-reduction">Food waste reduction</option>
+                <option value="School-meal">School meal programs</option>
+                <option value="local-food">Local food bank support</option>
+                <option value="Agricultural-sustainability">Agricultural sustainability</option>
+            </select><br>
+            <br>
+
+
         <label>Would you recommend our service?</label>
         <div class="radio-group">
             <input type="radio" id="q2yes" name="q2" value="Yes">
@@ -66,8 +111,8 @@
          </div><br>
 
         <br>
-        <label for ="file">file:</label>
-        <input type="file" id="file" ><br>
+        <label for ="evidence">Upload evidence of your experience (photos of food donations, volunteering, or food waste):</label>
+        <input type="file" id="evidence" name="user_evidence" accept="image/*,.pdf " > <br>
 
         <br>
         <input type="reset"><br>
