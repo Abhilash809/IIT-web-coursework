@@ -1,123 +1,182 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Feedback Form</title>
-    <link rel="stylesheet" href="feedback.css">
-</head>
-<body>
-    <form action="index.php" method="post" enctype="multipart/form-data">
-         <br>
-         <br>
-        <label for ="Fullname">Full Name</label>
-        <input type="text" id="Fullname"  minlength="4" required><br>
-
-        <br>
-
-        <label for ="Email">Email</label>
-        <input type="email" id ="Email" placeholder="Abc@gmail.com" required><br>
-
-        <br>
-        <label for ="Telephone">Telephone Number</label>
-        <input type="tel" id ="Telephone" placeholder="123-1234567" pattern="[0-9]{3}-[0-9]{7}"><br>   
-
-        <br>
-        <label for="address">Address</label>
-        <input type="text" id="address"><br>
-
-        <br>
-        <label for="comment">Comment or Message</label><br>
-        <textarea id="comment" rows="3" cols="25"></textarea><br>
-
-        <br>
-        <label for="Date">Date of Feedback?</label>
-        <input type="date" id="Date"><br>
-
-        <br>
-        <label>Your Role in Fighting Hunger?</label>
-        <div class="radio-group">
-            <input type="radio" id="q3a1" name="q3" value="Volunteer">
-            <label for="q3a1">Volunteer</label>
-        
-            <input type="radio" id="q3a2" name="q3" value="Donor">
-            <label for="q3a2">Donor</label>
-
-            <input type="radio" id="q3a3" name="q3" value="Beneficiary (food recipient)">
-            <label for="q3a3">Beneficiary (food recipient)</label>
-
-            <input type="radio" id="q3a4" name="q3" value="Donor">
-            <label for="q3a4">Researcher</label>
+    <link rel="stylesheet" href="feedback.css" />
+  </head>
+  <body>
+    <header>
+      <link rel="stylesheet" href="header.css" />
+      <div class="navbar">
+        <div class="logo-title">
+          <img src="images/logo.png" alt="Zero Hunger Logo" class="logo" />
+          <h1>Zero Hunger Sri Lanka</h1>
         </div>
+        <nav>
+          <ul class="nav-links">
+            <li><a href="homepage.html" title="Goes to Home page">Home</a></li>
+            <li>
+              <a href="volunteer.html" title="Goes to Volunteer page"
+                >Volunteer</a
+              >
+            </li>
+            <li><a href="table.html" title="Goes to table page">Table</a></li>
+            <li>
+              <a href="feedback.html" class="active" title="Goes feedback page"
+                >Feedback</a
+              >
+            </li>
+            <li>
+              <a href="profile.html" title="Goes to profile page"
+                >User Profile</a
+              >
+            </li>
+            <li><a href="team.html" title="Goes to team page">Team</a></li>
+            <li>
+              <a href="sitemap.html" title="Goes to sitemap page">Sitemap</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <form action="index.php" method="post" enctype="multipart/form-data">
+      <br />
+      <br />
+      <label for="Fullname">Full Name</label>
+      <input type="text" id="Fullname" minlength="4" required /><br />
 
+      <br />
 
-        <br>
-        <label>Was this your first time visiting?</label>
-        <div class="radio-group">
-            <input type="radio" id="q1yes" name="q1" value="Yes">
-            <label for="q1yes">Yes</label>
-        
-            <input type="radio" id="q1no" name="q1" value="No">
-            <label for="q1no">No</label>
-        </div><br>
-        
-    
-        <label for="hear-about">How did you hear about us?</label>
-            <select id="hear-about" name="hear_about" required>
-                <option value="" disabled selected>Select an option...</option> 
-                <option value="social-media">Social Media</option>
-                <option value="food-bank">Food Bank Referral</option>
-                <option value="volunteer">Volunteer Program</option>
-                <option value="other">Other</option>
-            </select><br>
-            <br>
-        
-        <label for="issue">What issues matter most?</label>
-            <select id="issue" name="issue" required>
-                <option value="" disabled selected>Select an option...</option> 
-                <option value="food-waste-reduction">Food waste reduction</option>
-                <option value="School-meal">School meal programs</option>
-                <option value="local-food">Local food bank support</option>
-                <option value="Agricultural-sustainability">Agricultural sustainability</option>
-            </select><br>
-            <br>
+      <label for="Email">Email</label>
+      <input
+        type="email"
+        id="Email"
+        placeholder="Abc@gmail.com"
+        required
+      /><br />
 
+      <br />
+      <label for="Telephone">Telephone Number</label>
+      <input
+        type="tel"
+        id="Telephone"
+        placeholder="123-1234567"
+        pattern="[0-9]{3}-[0-9]{7}"
+      /><br />
 
-        <label>Would you recommend our service?</label>
-        <div class="radio-group">
-            <input type="radio" id="q2yes" name="q2" value="Yes">
-            <label for="q2yes">Yes</label>
-        
-            <input type="radio" id="q2no" name="q2" value="No">
-            <label for="q2no">No</label>
-        </div><br>
-        
-        <label>Rate our service:</label>
-        <div class="star-rating">
-            <input type="radio" id="star5" name="rating" value="5">
-            <label for="star5" title="5 stars">★</label>
+      <br />
+      <label for="address">Address</label>
+      <input type="text" id="address" /><br />
 
-            <input type="radio" id="star4" name="rating" value="4">
-            <label for="star4" title="4 stars">★</label>
+      <br />
+      <label for="comment">Comment or Message</label><br />
+      <textarea id="comment" rows="3" cols="25"></textarea><br />
 
-            <input type="radio" id="star3" name="rating" value="3">
-            <label for="star3" title="3 stars">★</label>
+      <br />
+      <label for="Date">Date of Feedback?</label>
+      <input type="date" id="Date" /><br />
 
-            <input type="radio" id="star2" name="rating" value="2">
-            <label for="star2" title="2 stars">★</label>
+      <br />
+      <label>Your Role in Fighting Hunger?</label>
+      <div class="radio-group">
+        <input type="radio" id="q3a1" name="q3" value="Volunteer" />
+        <label for="q3a1">Volunteer</label>
 
-            <input type="radio" id="star1" name="rating" value="1">
-            <label for="star1" title="1 star">★</label>
-         </div><br>
+        <input type="radio" id="q3a2" name="q3" value="Donor" />
+        <label for="q3a2">Donor</label>
 
-        <br>
-        <label for ="evidence">Upload evidence of your experience (photos of food donations, volunteering, or food waste):</label>
-        <input type="file" id="evidence" name="user_evidence" accept="image/*,.pdf " > <br>
+        <input
+          type="radio"
+          id="q3a3"
+          name="q3"
+          value="Beneficiary (food recipient)"
+        />
+        <label for="q3a3">Beneficiary (food recipient)</label>
 
-        <br>
-        <input type="reset"><br>
-        <input type="submit">
+        <input type="radio" id="q3a4" name="q3" value="Donor" />
+        <label for="q3a4">Researcher</label>
+      </div>
+
+      <br />
+      <label>Was this your first time visiting?</label>
+      <div class="radio-group">
+        <input type="radio" id="q1yes" name="q1" value="Yes" />
+        <label for="q1yes">Yes</label>
+
+        <input type="radio" id="q1no" name="q1" value="No" />
+        <label for="q1no">No</label>
+      </div>
+      <br />
+
+      <label for="hear-about">How did you hear about us?</label>
+      <select id="hear-about" name="hear_about" required>
+        <option value="" disabled selected>Select an option...</option>
+        <option value="social-media">Social Media</option>
+        <option value="food-bank">Food Bank Referral</option>
+        <option value="volunteer">Volunteer Program</option>
+        <option value="other">Other</option></select
+      ><br />
+      <br />
+
+      <label for="issue">What issues matter most?</label>
+      <select id="issue" name="issue" required>
+        <option value="" disabled selected>Select an option...</option>
+        <option value="food-waste-reduction">Food waste reduction</option>
+        <option value="School-meal">School meal programs</option>
+        <option value="local-food">Local food bank support</option>
+        <option value="Agricultural-sustainability">
+          Agricultural sustainability
+        </option></select
+      ><br />
+      <br />
+
+      <label>Would you recommend our service?</label>
+      <div class="radio-group">
+        <input type="radio" id="q2yes" name="q2" value="Yes" />
+        <label for="q2yes">Yes</label>
+
+        <input type="radio" id="q2no" name="q2" value="No" />
+        <label for="q2no">No</label>
+      </div>
+      <br />
+
+      <label>Rate our service:</label>
+      <div class="star-rating">
+        <input type="radio" id="star5" name="rating" value="5" />
+        <label for="star5" title="5 stars">★</label>
+
+        <input type="radio" id="star4" name="rating" value="4" />
+        <label for="star4" title="4 stars">★</label>
+
+        <input type="radio" id="star3" name="rating" value="3" />
+        <label for="star3" title="3 stars">★</label>
+
+        <input type="radio" id="star2" name="rating" value="2" />
+        <label for="star2" title="2 stars">★</label>
+
+        <input type="radio" id="star1" name="rating" value="1" />
+        <label for="star1" title="1 star">★</label>
+      </div>
+      <br />
+
+      <br />
+      <label for="evidence"
+        >Upload evidence of your experience (photos of food donations,
+        volunteering, or food waste):</label
+      >
+      <input
+        type="file"
+        id="evidence"
+        name="user_evidence"
+        accept="image/*,.pdf "
+      />
+      <br />
+
+      <br />
+      <input type="reset" /><br />
+      <input type="submit" />
     </form>
-    
-</body>
-</html> 
+  </body>
+</html>
