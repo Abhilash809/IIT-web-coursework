@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Volunteer - Zero Hunger</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: url("images/bg-volunteer.jpg") no-repeat center center fixed;
+        background-size: cover;
+        color: #333;
+      }
+
+      header {
+        background-color: rgba(255, 255, 255, 0.85);
+        padding: 20px;
+        text-align: center;
+      }
+
+      h1 {
+        margin: 0;
+        color: #daa520;
+      }
+
+      .cards-container {
+        display: flex;
+        overflow-x: auto;
+        padding: 20px;
+        gap: 20px;
+      }
+
+      .card {
+        background-color: #fff;
+        border-radius: 10px;
+        min-width: 250px;
+        flex: 0 0 auto;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+        transition: transform 0.3s;
+      }
+
+      .card:hover {
+        transform: scale(1.05);
+      }
+
+      .card img {
+        width: 100%;
+        border-radius: 10px 10px 0 0;
+      }
+
+      .card-content {
+        padding: 15px;
+      }
+
+      .card-content h3 {
+        margin-top: 0;
+      }
+
+      .card-content button {
+        background-color: #ffcc00;
+        border: none;
+        padding: 10px;
+        width: 100%;
+        cursor: pointer;
+        transition: 0.3s;
+      }
+
+      .card-content button:hover {
+        background-color: #e6b800;
+      }
+
+      .feedback-section {
+        background: rgba(255, 255, 255, 0.9);
+        padding: 30px;
+        margin: 30px;
+        border-radius: 10px;
+      }
+
+      .feedback-section textarea {
+        width: 100%;
+        height: 100px;
+        padding: 10px;
+        margin-top: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        resize: none;
+      }
+
+      .feedback-section button {
+        margin-top: 10px;
+        margin-right: 10px;
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+      }
+
+      .submit-btn {
+        background-color: #ffcc00;
+      }
+
+      .cancel-btn {
+        background-color: #ccc;
+      }
+
+      footer {
+        text-align: center;
+        padding: 20px;
+        background: rgba(0, 0, 0, 0.05);
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Volunteer for Zero Hunger</h1>
+      <p>
+        Join our mission to eliminate hunger through local and global efforts.
+      </p>
+    </header>
+
+    <section class="cards-container">
+      <div class="card">
+        <img src="images/food-drive.jpg" alt="Food Drive" />
+        <div class="card-content">
+          <h3>Community Food Drive</h3>
+          <p>Help organize and distribute food locally.</p>
+          <button>Sign Up</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="images/school-program.jpg" alt="School Lunches" />
+        <div class="card-content">
+          <h3>School Nutrition Program</h3>
+          <p>Volunteer in preparing school meals for children.</p>
+          <button>Sign Up</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="images/farm-help.jpg" alt="Farm Help" />
+        <div class="card-content">
+          <h3>Farm Support</h3>
+          <p>Assist farmers in growing and distributing food sustainably.</p>
+          <button>Sign Up</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="images/awareness-campaign.jpg" alt="Campaign" />
+        <div class="card-content">
+          <h3>Awareness Campaigns</h3>
+          <p>Spread awareness about food security issues online and offline.</p>
+          <button>Sign Up</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="feedback-section">
+      <h2>Leave Your Feedback</h2>
+      <textarea placeholder="Write your review here..."></textarea><br />
+      <button class="submit-btn">Submit Feedback</button>
+      <button class="cancel-btn">Cancel</button>
+      <p>Rate this page:</p>
+      <div>⭐ ⭐ ⭐ ⭐ ⭐</div>
+    </section>
+  </body>
+</html>
