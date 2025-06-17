@@ -1,7 +1,59 @@
-body {
-  background-image: url(images/herosection.png);
-  background-repeat: no-repeat;
+#hero {
+  background-color: #fef9e7; /* Page background */
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.hero-content {
+  background-image: url("images/herosection.png"); /* 👈 Your image here */
+  background-size: cover;
   background-position: center;
-  background-attachment: fixed;
-  background-size: contain;
+  width: 100%;
+  max-width: 700px;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  padding: 90px;
+  color: white;
+  text-align: center;
+  position: relative;
+}
+
+/* Optional semi-transparent layer for contrast */
+.hero-overlay {
+  background-color: rgba(0, 0, 0, 0.5); /* Dark overlay inside the box */
+  padding: 40px 20px;
+  border-radius: 12px;
+}
+
+.hero-content h1 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-family: "Poppins", sans-serif;
+}
+
+.hero-content p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  font-family: "Roboto", sans-serif;
+}
+
+.hero-btn {
+  background-color: #e67e22;
+  color: white;
+  padding: 14px 30px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.hero-btn:hover {
+  background-color: #cf711f;
+  transform: scale(1.05);
 }
