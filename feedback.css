@@ -43,10 +43,19 @@ input[type="radio"] {
 
 .radio-group {
     display: flex;
+    flex-wrap: wrap;
     gap: 15px;
-    align-items: center;
     margin-top: 5px;
 }
+
+.radio-option {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    white-space: nowrap;
+    font-weight: normal;
+}
+
 
 
 select {
