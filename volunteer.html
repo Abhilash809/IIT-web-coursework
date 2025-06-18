@@ -19,15 +19,18 @@
       }
 
       header h1 {
-        margin: 0;
+        margin-top: 0;
         color: #333;
+        text-align: center;
       }
 
       .card-section {
         display: flex;
         overflow-x: auto;
-        padding: 20px;
+        padding: 30px;
         gap: 20px;
+        margin-top: 80px;
+        background-color: #fef9e7;
       }
 
       .card {
@@ -90,45 +93,43 @@
   </head>
   <body>
     <header>
-      <header>
-        <link rel="stylesheet" href="header.css" />
-        <div class="navbar">
-          <div class="logo-title">
-            <img src="images/logo.png" alt="Zero Hunger Logo" class="logo" />
-            <h1>Zero Hunger Sri Lanka</h1>
-          </div>
-          <nav>
-            <ul class="nav-links">
-              <li>
-                <a href="homepage.html" title="Goes to home page">Home</a>
-              </li>
-              <li>
-                <a
-                  href="volunteer.html"
-                  class="active"
-                  title="Goes to Volunteer page"
-                  >Volunteer</a
-                >
-              </li>
-              <li><a href="table.html" title="Goes to table page">Table</a></li>
-              <li>
-                <a href="feedback.html" title="Goes feedback page">Feedback</a>
-              </li>
-              <li>
-                <a href="profile.html" title="Goes to profile page"
-                  >User Profile</a
-                >
-              </li>
-              <li>
-                <a href="team.html" title="Goes to team page">Team</a>
-              </li>
-              <li>
-                <a href="sitemap.html" title="Goes to sitemap page">Sitemap</a>
-              </li>
-            </ul>
-          </nav>
+      <link rel="stylesheet" href="header.css" />
+      <div class="navbar">
+        <div class="logo-title">
+          <img src="images/logo.png" alt="Zero Hunger Logo" class="logo" />
+          <h1>Zero Hunger Sri Lanka</h1>
         </div>
-      </header>
+        <nav>
+          <ul class="nav-links">
+            <li>
+              <a href="homepage.html" title="Goes to home page">Home</a>
+            </li>
+            <li>
+              <a
+                href="volunteer.html"
+                class="active"
+                title="Goes to Volunteer page"
+                >Volunteer</a
+              >
+            </li>
+            <li><a href="table.html" title="Goes to table page">Table</a></li>
+            <li>
+              <a href="feedback.html" title="Goes feedback page">Feedback</a>
+            </li>
+            <li>
+              <a href="profile.html" title="Goes to profile page"
+                >User Profile</a
+              >
+            </li>
+            <li>
+              <a href="team.html" title="Goes to team page">Team</a>
+            </li>
+            <li>
+              <a href="sitemap.html" title="Goes to sitemap page">Sitemap</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
       <h1>Volunteer for Zero Hunger</h1>
     </header>
 
@@ -162,15 +163,24 @@
       </div>
     </section>
 
-    <h2 style="text-align: center">Leave Your Feedback</h2>
-    <p style="text-align: center">Help us improve by sharing your thoughts.</p>
+    <h2 style="text-align: center; margin-bottom: 20px; margin-top: 40px">
+      Leave Your Feedback!
+    </h2>
+    <p style="text-align: center; margin-bottom: 20px">
+      Help us improve by sharing your thoughts.Thank You!
+    </p>
 
     <div style="text-align: center; margin-bottom: 40px">
       <textarea
         rows="4"
         cols="50"
         placeholder="Write your feedback here..."
-        style="padding: 80px; border: 3px solid #000000; border-radius: 10px"
+        style="
+          padding: 80px;
+          border: 3px solid #000000;
+          border-radius: 10px;
+          background-color: rgb(221, 220, 209);
+        "
       ></textarea>
       <br /><br />
       <button class="feedback-button">Submit</button>
