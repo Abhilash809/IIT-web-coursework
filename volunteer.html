@@ -4,29 +4,26 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Volunteer - Zero Hunger</title>
-    <link rel="stylesheet" href="style.css" />
     <style>
       body {
         margin: 0;
         font-family: Arial, sans-serif;
-        background: url("images/bg-volunteer.jpg") no-repeat center center fixed;
-        background-size: cover;
+        background-color: #f9f9f9;
         color: #333;
-        padding-top: 120px;
       }
 
       header {
-        background-color: rgba(255, 255, 255, 0.85);
+        background-color: #ffc107;
         padding: 20px;
         text-align: center;
       }
 
-      h1 {
+      header h1 {
         margin: 0;
-        color: #daa520;
+        color: #333;
       }
 
-      .cards-container {
+      .card-section {
         display: flex;
         overflow-x: auto;
         padding: 20px;
@@ -34,234 +31,112 @@
       }
 
       .card {
-        background-color: #fff;
+        background-color: white;
         border-radius: 10px;
         min-width: 250px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         flex: 0 0 auto;
-        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+        padding: 15px;
+        box-sizing: border-box;
       }
 
       .card img {
         width: 100%;
-        height: 180px;
+        height: 150px;
         object-fit: cover;
         border-radius: 10px 10px 0 0;
+        margin-bottom: 10px;
       }
 
-      .card-content {
-        padding: 15px;
+      .card h3 {
+        margin: 0 0 10px 0;
+        font-size: 18px;
       }
 
-      .card-content h3 {
-        margin-top: 0;
+      .card p {
+        font-size: 14px;
+        margin: 0 0 15px 0;
       }
 
-      .card-content button {
-        background-color: #ffcc00;
+      .card button {
+        background-color: #ffc107;
         border: none;
         padding: 10px;
         width: 100%;
-        cursor: pointer;
-        transition: 0.3s;
-      }
-
-      .card-content button:hover {
-        background-color: #e6b800;
-      }
-
-      .feedback-section {
-        background: rgba(255, 255, 255, 0.9);
-        padding: 30px;
-        margin: 30px;
-        border-radius: 10px;
-        text-align: center;
-      }
-
-      .feedback-section textarea {
-        width: 100%;
-        height: 100px;
-        padding: 10px;
-        margin-top: 10px;
-        border: 1px solid #ccc;
         border-radius: 5px;
-        resize: none;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        font-weight: bold;
       }
 
-      .feedback-section button {
-        margin-top: 10px;
-        margin-right: 10px;
-        padding: 10px 20px;
+      .card button:hover {
+        background-color: #e0a800;
+      }
+
+      /* Feedback button simple style */
+      .feedback-button {
+        background-color: orange;
+        color: white;
+        padding: 8px 16px;
         border: none;
-        cursor: pointer;
-        border-radius: 5px;
-      }
-
-      .submit-btn {
-        background-color: #ffcc00;
-      }
-
-      .cancel-btn {
-        background-color: #ccc;
-      }
-
-      footer {
-        text-align: center;
-        padding: 20px;
-        background: rgba(0, 0, 0, 0.05);
-      }
-
-      #rating-stars {
-        margin-top: 10px;
-        font-size: 30px;
-        cursor: pointer;
-        color: lightgray;
-        user-select: none;
-        display: inline-block;
-      }
-
-      #rating-stars .stars.hovered,
-      #rating-stars .stars.selected {
-        color: gold;
-      }
-
-      .rating-text {
-        margin-top: 40px;
+        border-radius: 4px;
         font-size: 16px;
+        cursor: pointer;
+      }
+
+      .feedback-button:hover {
+        background-color: darkorange;
       }
     </style>
   </head>
   <body>
     <header>
-      <link rel="stylesheet" href="header.css" />
-      <div class="navbar">
-        <div class="logo-title">
-          <img src="images/logo.png" alt="Zero Hunger Logo" class="logo" />
-          <h1>Zero Hunger Sri Lanka</h1>
-        </div>
-        <nav>
-          <ul class="nav-links">
-            <li><a href="homepage.html" title="Goes to home page">Home</a></li>
-            <li>
-              <a
-                href="volunteer.html"
-                class="active"
-                title="Goes to Volunteer page"
-                >Volunteer</a
-              >
-            </li>
-            <li><a href="table.html" title="Goes to table page">Table</a></li>
-            <li>
-              <a href="feedback.html" title="Goes feedback page">Feedback</a>
-            </li>
-            <li>
-              <a href="profile.html" title="Goes to profile page"
-                >User Profile</a
-              >
-            </li>
-            <li><a href="team.html" title="Goes to team page">Team</a></li>
-            <li>
-              <a href="sitemap.html" title="Goes to sitemap page">Sitemap</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
       <h1>Volunteer for Zero Hunger</h1>
     </header>
 
-    <section class="cards-container">
+    <section class="card-section">
       <div class="card">
-        <img src="images/volunteer1.jpg" alt="Food Drive" />
-        <div class="card-content">
-          <h3>Community Food Drive</h3>
-          <p>Help organize and distribute food locally.</p>
-          <button><b>Sign Up</b></button>
-        </div>
+        <img src="images/volunteer1.jpg" alt="Community Food Drive" />
+        <h3>Community Food Drive</h3>
+        <p>Help organize and distribute food locally.</p>
+        <button>Sign Up</button>
       </div>
 
       <div class="card">
-        <img src="images/volunteer2.jpg" alt="School Lunches" />
-        <div class="card-content">
-          <h3>School Nutrition Program</h3>
-          <p>Volunteer in preparing school meals for children.</p>
-          <button><b>Sign Up</b></button>
-        </div>
+        <img src="images/volunteer2.jpg" alt="School Nutrition Program" />
+        <h3>School Nutrition Program</h3>
+        <p>Volunteer in preparing school meals for children.</p>
+        <button>Sign Up</button>
       </div>
 
       <div class="card">
-        <img src="images/volunteer3.jpg" alt="Farm Help" />
-        <div class="card-content">
-          <h3>Farm Support</h3>
-          <p>Assist farmers in growing and distributing food sustainably.</p>
-          <button><b>Sign Up</b></button>
-        </div>
+        <img src="images/volunteer3.jpg" alt="Farm Volunteer" />
+        <h3>Farm Volunteer</h3>
+        <p>Work with farmers to increase sustainable harvests.</p>
+        <button>Sign Up</button>
       </div>
 
       <div class="card">
-        <img src="images/volunteer4.jpg" alt="Campaign" />
-        <div class="card-content">
-          <h3>Awareness Campaigns</h3>
-          <p>Spread awareness about food security issues online and offline.</p>
-          <button><b>Sign Up</b></button>
-        </div>
+        <img src="images/volunteer4.jpg" alt="Awareness Campaign" />
+        <h3>Awareness Campaign</h3>
+        <p>Help spread knowledge about hunger issues.</p>
+        <button>Sign Up</button>
       </div>
     </section>
 
-    <section class="feedback-section">
-      <h2>Leave Your Feedback</h2>
-      <p>
-        <b>
-          Join our mission to eliminate hunger through local and global efforts.
-        </b>
-      </p>
-      <textarea placeholder="Write your review here..."></textarea><br />
-      <button class="submit-btn">Submit Feedback</button>
-      <button class="cancel-btn">Cancel</button>
+    <h2 style="text-align: center">Leave Your Feedback</h2>
+    <p style="text-align: center">Help us improve by sharing your thoughts.</p>
 
-      <div class="rating-text">Rate this page:</div>
-      <div id="rating-stars">
-        <span class="stars" data-value="1">★</span>
-        <span class="stars" data-value="2">★</span>
-        <span class="stars" data-value="3">★</span>
-        <span class="stars" data-value="4">★</span>
-        <span class="stars" data-value="5">★</span>
-      </div>
-      <div class="rating-text" id="rating-result"></div>
-    </section>
-
-    <script>
-      const stars = document.querySelectorAll(".stars");
-
-      let selectedRating = 0;
-
-      stars.forEach((star, index) => {
-        star.addEventListener("mouseover", () => {
-          resetStars();
-          for (let i = 0; i <= index; i++) {
-            stars[i].classList.add("hovered");
-          }
-        });
-
-        star.addEventListener("mouseout", () => {
-          resetStars();
-          highlightSelected();
-        });
-
-        star.addEventListener("click", () => {
-          selectedRating = index + 1;
-
-          highlightSelected();
-        });
-      });
-
-      function resetStars() {
-        stars.forEach((star) => star.classList.remove("hovered", "selected"));
-      }
-
-      function highlightSelected() {
-        for (let i = 0; i < selectedRating; i++) {
-          stars[i].classList.add("selected");
-        }
-      }
-    </script>
+    <div style="text-align: center; margin-bottom: 40px">
+      <textarea
+        rows="4"
+        cols="50"
+        ve
+        placeholder="Write your feedback here..."
+        style="padding: 50px; border: 3px solid #000000; border-radius: 5px"
+      ></textarea>
+      <br /><br />
+      <button class="feedback-button">Submit</button>
+    </div>
   </body>
 </html>
