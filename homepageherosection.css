@@ -1,5 +1,5 @@
 #hero {
-  background-color: #fef9e7; /* Page background */
+  background-color: #fef9e7;
   height: 100vh;
   display: flex;
   align-items: center;
@@ -8,7 +8,7 @@
 }
 
 .hero-content {
-  background-image: url("images/herosection.png"); /* 👈 Your image here */
+  background-image: url("images/herosection.png");
   background-size: cover;
   background-position: center;
   width: 100%;
@@ -21,9 +21,8 @@
   position: relative;
 }
 
-/* Optional semi-transparent layer for contrast */
 .hero-overlay {
-  background-color: rgba(0, 0, 0, 0.5); /* Dark overlay inside the box */
+  background-color: rgba(0, 0, 0, 0.5);
   padding: 40px 20px;
   border-radius: 12px;
 }
@@ -56,4 +55,64 @@
 .hero-btn:hover {
   background-color: #cf711f;
   transform: scale(1.05);
+}
+
+/* Wrapper to align left + right content */
+.hero-wrapper {
+  display: flex;
+  justify-content: center;
+  border-width: medium;
+  align-items: start;
+  flex-wrap: wrap;
+  gap: 40px;
+  max-width: 1200px;
+  margin: auto;
+  padding: 60px 20px;
+}
+
+/* Right Side Aside Box */
+.hero-aside {
+  max-width: 400px;
+  flex: 1;
+}
+
+.aside-box {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 30px 25px;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3),
+    /* Strong primary shadow */ 0 6px 8px rgba(0, 0, 0, 0.15);
+
+  text-align: center;
+  background-image: url("images/aside-bg.png"); /* optional background */
+  background-size: cover;
+  background-position: center;
+  color: #cf711f;
+}
+
+.aside-logo {
+  width: 60px;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+.hero-aside h2 {
+  font-size: 22px;
+  margin-bottom: 15px;
+  font-family: "Poppins", sans-serif;
+}
+
+.hero-aside p {
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 25px;
+}
+
+.learn-btn {
+  background-color: #cf711f;
+}
+
+.learn-btn:hover {
+  background-color: #cf711f;
 }

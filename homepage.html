@@ -7,7 +7,10 @@
     <title>Home page</title>
   </head>
   <body>
-    <h1>Zero Hunger: A Shared Responsibility</h1>
+    <section>
+      <h1 style="padding: 0px">Zero Hunger: A Shared Responsibility</h1>
+      <br />
+    </section>
     <header>
       <link rel="stylesheet" href="header.css" />
       <div class="navbar">
@@ -17,7 +20,11 @@
         </div>
         <nav>
           <ul class="nav-links">
-            <li><a href="home.html" class="active">Home</a></li>
+            <li>
+              <a href="home.html" class="active" title="Goes to home page"
+                >Home</a
+              >
+            </li>
             <li>
               <a href="volunteer.html" title="Goes to Volunteer page"
                 >Volunteer</a
@@ -44,22 +51,46 @@
     <main>
       <link rel="stylesheet" href="homepageherosection.css" />
       <section id="hero">
-        <section id="hero">
+        <div class="hero-wrapper">
+          <!-- LEFT HERO CONTENT -->
           <div class="hero-content">
             <div class="hero-overlay">
               <h1>End Hunger. Empower Lives.</h1>
               <p>Together, we can make Sri Lanka hunger-free by 2030.</p>
-              <a href="#explore" class="hero-btn">Explore How</a>
+              <a href="#explore" class="hero-btn">Explore Now</a>
             </div>
           </div>
-        </section>
+
+          <!-- RIGHT ASIDE CONTENT -->
+          <aside class="hero-aside">
+            <div class="aside-box">
+              <img src="images/logo-small.png" alt="Logo" class="aside-logo" />
+              <h2>Why This Matters</h2>
+              <p>
+                Over 2 million Sri Lankans face food insecurity. Learn how
+                awareness and community action can change lives.
+              </p>
+              <a href="content_ST2.html" class="hero-btn learn-btn"
+                >Learn More</a
+              >
+            </div>
+          </aside>
+        </div>
       </section>
     </main>
 
     <footer>
       <hr />
       Made with care by Team Zero HUNGER <br />
-      &copy; copuright resevered2025 <br />
+      &copy; copyright resevered2025 <br />
+      <style>
+        footer {
+          background-color: #777;
+          padding: 90px;
+          text-align: center;
+          color: white;
+        }
+      </style>
     </footer>
   </body>
 </html>
