@@ -1,0 +1,25 @@
+#mission {
+  background-color: #ffffff;
+  padding: 80px 20px;
+}
+
+.mission-content {
+  max-width: 1000px;
+  margin: auto;
+  text-align: center;
+  color: #2c3e50;
+}
+
+.mission-content h2 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  font-family: "Poppins", sans-serif;
+}
+
+.mission-content p {
+  font-size: 18px;
+  line-height: 1.8;
+  margin-bottom: 20px;
+  font-family: "Roboto", sans-serif;
+}
