@@ -311,6 +311,60 @@ table input[type="text"] {
     margin: 0;
 }
 
+/* ===== Skills Form Section ===== */
+.skills-form {
+    margin-top: 15px;
+}
+
+.skill-input-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.skill-input {
+    width: 100%;
+    padding: 10px 15px 10px 35px;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    background-color: var(--input-bg);
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+.skill-input:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 2px rgba(218, 165, 32, 0.2);
+    outline: none;
+}
+
+.skill-icon {
+    position: absolute;
+    left: 12px;
+    color: var(--primary-color);
+    font-size: 16px;
+}
+
+.add-skill-btn {
+    background-color: transparent;
+    border: 1px dashed var(--border-color);
+    color: var(--primary-color);
+    padding: 8px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.add-skill-btn:hover {
+    border-color: var(--primary-color);
+    background-color: rgba(218, 165, 32, 0.1);
+}
+
 button, .submit-btn, .reset-btn {
     padding: 12px 24px;
     border-radius: 8px;
