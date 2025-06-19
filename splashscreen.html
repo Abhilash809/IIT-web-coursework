@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="refresh" content="4;url=homepage.html" />
+  <meta http-equiv="refresh" content="4;url=homepage.html" />
     <title>Zero Hunger</title>
     <style>
       body {
@@ -47,17 +47,29 @@
         margin-bottom: 15px;
         list-style-type: none;
       }
+
+      .loader {
+        width: 20px;
+        height: 20px;
+        border: 3px solid #fff;
+        border-top: 3px solid #ffc107;
+        border-radius: 50%;
+        animation: spin 1s linear infinite;
+        margin: auto;
+      }
+
+      @keyframes spin {
+        100% {
+          transform: rotate(360deg);
+        }
+      }
     </style>
   </head>
   <body>
     <div class="splash">
       <h1>Zero Hunger</h1>
       <p>
-        Zero Hunger is a platform dedicated to raising awareness about global
-        hunger and providing resources to combat food insecurity. Through
-        community engagement, and support initiatives, we aim to empower
-        individuals and organizations to make a positive impact in the fight
-        against hunger worldwide.
+        To unite communities in the fight against hunger by raising awareness, encouraging action, and supporting food security for all.
       </p>
       <h2>Group Members:</h2>
       <ul>
@@ -66,6 +78,9 @@
         <li>Abhilash Bogahawatta</li>
         <li>Sandaru Pasan</li>
       </ul>
+
+      <div class="loader"></div>
+
       <p class="quote">Feed Hope. Fight Hunger.</p>
     </div>
   </body>
