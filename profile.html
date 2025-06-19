@@ -16,55 +16,76 @@
                     <input type="file" id="profile-pic-upload" name="profile_picture" accept="image/*">
                 </div>
                 <div class="profile-text">
-                    <h1>Edit Your Profile</h1>
+                    <div class="form-group">
+                        <label for="name">Full Name:</label>
+                        <input type="text" id="name" name="name" placeholder="Sandaru Pasan" required>
+                    </div>
                     <div class="form-group">
                         <label for="quote">Personal Quote:</label>
-                        <input type="text" id="quote" name="quote" value="A quotation that captures your personality">
+                        <input type="text" id="quote" name="quote" placeholder="A quotation that captures your personality">
                     </div>
                     
                     <div class="profile-info">
                         <div class="form-group info-item">
                             <label for="age">Age:</label>
-                            <input type="number" id="age" name="age" value="21">
+                            <input type="number" id="age" name="age" placeholder="21">
                         </div>
                         <div class="form-group info-item">
                             <label for="work">Work:</label>
-                            <input type="text" id="work" name="work" value="Student">
+                            <input type="text" id="work" name="work" placeholder="Student">
                         </div>
                         <div class="form-group info-item">
                             <label for="family">Family:</label>
-                            <input type="text" id="family" name="family" value="Single">
+                            <input type="text" id="family" name="family" placeholder="Single">
                         </div>
                         <div class="form-group info-item">
                             <label for="location">Location:</label>
-                            <input type="text" id="location" name="location" value="London">
+                            <input type="text" id="location" name="location" placeholder="London">
                         </div>
                     </div>
                 </div>
             </div>
             
+
+        </form>
+    </div>
+            
             <hr class="divider">
             
-            <!-- Guide Section -->
-            <div class="section">
-                <h2>Guide</h2>
-                <div class="form-group">
-                    <label for="goal1">Goal 1:</label>
-                    <input type="text" id="goal1" name="goal1" value="Text Here">
+            <form class="goal-form">
+                <h2>Our Goals</h2>
+                <div class="goal-row">
+                  <!-- Goal 1 -->
+                  <div class="goal-card">
+                    <img src="images/goal.png" alt="Goal 1 Image">
+                    <label for="goal1">Goal 1</label>
+                    <input type="text" id="goal1" name="goal1" value="End Hunger">
+                  </div>
+              
+                  <!-- Goal 2 -->
+                  <div class="goal-card">
+                    <img src="images/goal.png" alt="Goal 2 Image">
+                    <label for="goal2">Goal 2</label>
+                    <input type="text" id="goal2" name="goal2" value="Improve Nutrition">
+                  </div>
+              
+                  <!-- Goal 3 -->
+                  <div class="goal-card">
+                    <img src="images/goal.png" alt="Goal 3 Image">
+                    <label for="goal3">Goal 3</label>
+                    <input type="text" id="goal3" name="goal3" value="Promote Sustainability">
+                  </div>
+              
+                  <!-- Goal 4 -->
+                  <div class="goal-card">
+                    <img src="images/goal.png" alt="Goal 4 Image">
+                    <label for="goal4">Goal 4</label>
+                    <input type="text" id="goal4" name="goal4" value="Zero Waste">
+                  </div>
                 </div>
-                <div class="form-group">
-                    <label for="goal2">Goal 2:</label>
-                    <input type="text" id="goal2" name="goal2" value="Text Here">
-                </div>
-                <div class="form-group">
-                    <label for="goal3">Goal 3:</label>
-                    <input type="text" id="goal3" name="goal3" value="Text Here">
-                </div>
-                <div class="form-group">
-                    <label for="goal4">Goal 4:</label>
-                    <input type="text" id="goal4" name="goal4" value="Text Here">
-                </div>
-            </div>
+              </form>
+              
+              
             
             <hr class="divider">
             

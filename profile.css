@@ -120,6 +120,60 @@ body {
     color: #000;
 }
 
+.goal-form {
+    margin: 40px auto;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .goal-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .goal-card {
+    background-color: #fff;
+    border: 2px solid #f8f00a;
+    border-radius: 15px;
+    padding: 20px;
+    width: 250px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    text-align: center;
+  }
+  
+  .goal-card:hover {
+    background-color: #f8f00a;
+    color: #000;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .goal-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .goal-card label {
+    font-weight: bold;
+    display: block;
+    margin: 10px 0 5px;
+  }
+  
+  .goal-card input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+  }
+  
+
 .section {
     margin-bottom: 40px;
 }
