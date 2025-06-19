@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Volunteer - Zero Hunger</title>
+    <link rel="stylesheet" href="Global.css" />
+    <title>Zero Hunger Sri Lanka</title>
     <style>
       body {
         margin: 0;
@@ -12,16 +13,13 @@
         color: #333;
       }
 
-      header {
+      header h2 {
         background-color: #ffffff;
         padding: 20px;
         text-align: center;
-      }
-
-      header h1 {
+        font-size: xx-large;
         margin-top: 0;
         color: #333;
-        text-align: center;
       }
 
       .card-section {
@@ -93,7 +91,7 @@
   </head>
   <body>
     <header>
-      <link rel="stylesheet" href="header.css" />
+      <!--<link rel="stylesheet" href="header.css" />-->
       <div class="navbar">
         <div class="logo-title">
           <img src="images/logo.png" alt="Zero Hunger Logo" class="logo" />
@@ -130,60 +128,74 @@
           </ul>
         </nav>
       </div>
-      <h1>Volunteer for Zero Hunger</h1>
+      <h2>Volunteer for Zero Hunger</h2>
     </header>
+    <main class="wrapper">
+      <h1>Volunteer for Zero Hunger</h1>
+      <section class="card-section">
+        <div class="card">
+          <img src="images/volunteer1.jpg" alt="Community Food Drive" />
+          <h3>Community Food Drive</h3>
+          <p>Help organize and distribute food locally.</p>
+          <button>Sign Up</button>
+        </div>
 
-    <section class="card-section">
-      <div class="card">
-        <img src="images/volunteer1.jpg" alt="Community Food Drive" />
-        <h3>Community Food Drive</h3>
-        <p>Help organize and distribute food locally.</p>
-        <button>Sign Up</button>
+        <div class="card">
+          <img src="images/volunteer2.jpg" alt="School Nutrition Program" />
+          <h3>School Nutrition Program</h3>
+          <p>Volunteer in preparing school meals for children.</p>
+          <button>Sign Up</button>
+        </div>
+
+        <div class="card">
+          <img src="images/volunteer3.jpg" alt="Farm Volunteer" />
+          <h3>Farm Volunteer</h3>
+          <p>Work with farmers to increase sustainable harvests.</p>
+          <button>Sign Up</button>
+        </div>
+
+        <div class="card">
+          <img src="images/volunteer4.jpg" alt="Awareness Campaign" />
+          <h3>Awareness Campaign</h3>
+          <p>Help spread knowledge about hunger issues.</p>
+          <button>Sign Up</button>
+        </div>
+      </section>
+
+      <h2 style="text-align: center; margin-bottom: 20px; margin-top: 40px">
+        Leave Your Feedback!
+      </h2>
+      <p style="text-align: center; margin-bottom: 20px">
+        Help us improve by sharing your thoughts.Thank You!
+      </p>
+
+      <div style="text-align: center; margin-bottom: 40px">
+        <textarea
+          rows="4"
+          cols="50"
+          placeholder="Write your feedback here..."
+          style="
+            padding: 80px;
+            border: 3px solid #000000;
+            border-radius: 10px;
+            background-color: rgb(221, 220, 209);
+          "
+        ></textarea>
+        <br /><br />
+        <button class="feedback-button">Submit</button>
       </div>
-
-      <div class="card">
-        <img src="images/volunteer2.jpg" alt="School Nutrition Program" />
-        <h3>School Nutrition Program</h3>
-        <p>Volunteer in preparing school meals for children.</p>
-        <button>Sign Up</button>
-      </div>
-
-      <div class="card">
-        <img src="images/volunteer3.jpg" alt="Farm Volunteer" />
-        <h3>Farm Volunteer</h3>
-        <p>Work with farmers to increase sustainable harvests.</p>
-        <button>Sign Up</button>
-      </div>
-
-      <div class="card">
-        <img src="images/volunteer4.jpg" alt="Awareness Campaign" />
-        <h3>Awareness Campaign</h3>
-        <p>Help spread knowledge about hunger issues.</p>
-        <button>Sign Up</button>
-      </div>
-    </section>
-
-    <h2 style="text-align: center; margin-bottom: 20px; margin-top: 40px">
-      Leave Your Feedback!
-    </h2>
-    <p style="text-align: center; margin-bottom: 20px">
-      Help us improve by sharing your thoughts.Thank You!
-    </p>
-
-    <div style="text-align: center; margin-bottom: 40px">
-      <textarea
-        rows="4"
-        cols="50"
-        placeholder="Write your feedback here..."
-        style="
-          padding: 80px;
-          border: 3px solid #000000;
-          border-radius: 10px;
-          background-color: rgb(221, 220, 209);
-        "
-      ></textarea>
-      <br /><br />
-      <button class="feedback-button">Submit</button>
-    </div>
+    </main>
+    <footer>
+      <hr />
+      <p>
+        Made with care by Team Zero HUNGER<br />
+        <a href="editor_ST2.html">Page Editor</a><br />
+        <span
+          >This page follows accessibility guidelines (semantic tags, alt text,
+          contrast).</span
+        ><br />
+        &copy; 2025
+      </p>
+    </footer>
   </body>
 </html>
