@@ -1,102 +1,72 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="refresh" content="4;url=home.html" />
     <title>Zero Hunger</title>
     <style>
       body {
         margin: 0;
-      }
-
-      #loader {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: white;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 2rem;
-        font-weight: bold;
-        z-index: 9999;
-      }
-
-      #main-content {
-        display: none;
-        height: 100vh;
-        color: white;
-        text-align: center;
-        background: url("images/s1.jpg") no-repeat center center/cover;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+        padding: 0;
         font-family: Arial, sans-serif;
-        padding: 0 20px;
-        opacity: 0;
-        animation: fadeIn 2s ease-in forwards;
+        text-align: center;
+        color: white;
+        background: url("images/splashscreen.jpg") no-repeat center center fixed;
+        background-size: cover;
+        margin: 0;
+        padding: 0px 70px;
       }
 
-      @keyframes fadeIn {
-        to {
-          opacity: 1;
-        }
+      .splash {
+        padding-top: 100px;
+        background-color: rgba(0, 0, 0, 0.5);
+        min-height: 100vh;
       }
 
       h1 {
-        font-size: 4rem;
-        text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
-        margin-bottom: 0.5em;
+        font-size: 75px;
+        margin-bottom: 10px;
+        margin-top: 5px;
+        color: #ffc107;
       }
 
-      p.welcome-text {
-        font-size: 1.5rem;
-        max-width: 600px;
-        text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
-        line-height: 1.4;
-        margin-top: 0;
-        margin-bottom: 1.5em;
+      p {
+        font-size: 20px;
+        max-width: 900px;
+        margin: auto;
+        padding: 0 20px;
+        margin-top: 20px;
       }
-
-      .btn {
-        background-color: #ffcc00;
-        color: #333;
-        padding: 12px 24px;
-        font-size: 1rem;
+      .quote {
+        color: rgb(255, 255, 255);
+        font-size: 80px;
+        margin-top: 60px;
         font-weight: bold;
-        border: none;
-        border-radius: 8px;
-        cursor: pointer;
-        box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
-        transition: background-color 0.3s ease;
       }
-
-      .btn:hover {
-        background-color: #ffdd33;
+      ul li {
+        margin-bottom: 15px;
+        list-style-type: none;
       }
     </style>
   </head>
   <body>
-    <div id="loader">Loading...</div>
-
-    <div id="main-content">
+    <div class="splash">
       <h1>Zero Hunger</h1>
-      <p class="welcome-text">
-        Welcome to Zero Hunger — a mission to eradicate hunger and ensure
-        everyone has access to nutritious food. Join us in creating a world
-        where no one goes to bed hungry.
+      <p>
+        Zero Hunger is a platform dedicated to raising awareness about global
+        hunger and providing resources to combat food insecurity. Through
+        community engagement, and support initiatives, we aim to empower
+        individuals and organizations to make a positive impact in the fight
+        against hunger worldwide.
       </p>
-      <button class="btn">Learn More</button>
+      <h2>Group Members:</h2>
+      <ul>
+        <li>Kumuthu Dahanayake</li>
+        <li>Thisandu Ranadheera</li>
+        <li>Abhilash Bogahawatta</li>
+        <li>Sandaru Pasan</li>
+      </ul>
+      <p class="quote">Feed Hope. Fight Hunger.</p>
     </div>
-
-    <script>
-      setTimeout(() => {
-        document.getElementById("loader").style.display = "none";
-        document.getElementById("main-content").style.display = "flex";
-      }, 4000);
-    </script>
   </body>
 </html>
