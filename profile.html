@@ -7,42 +7,31 @@
     <link rel="stylesheet" href="profile.css">
 </head>
 <body>
-      <header>
-      <link rel="stylesheet" href="header.css" />
-      <div class="navbar">
-        <div class="logo-title">
-          <img src="images/logo.png" alt="Zero Hunger Logo" class="logo" />
-          <h1>Zero Hunger Sri Lanka</h1>
+    <header>
+        <link rel="stylesheet" href="header.css" />
+        <div class="navbar">
+            <div class="logo-title">
+                <img src="images/logo.png" alt="Zero Hunger Logo" class="logo" />
+                <h1>Zero Hunger Sri Lanka</h1>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="homepage.html" title="Goes to home page">Home</a></li>
+                    <li><a href="volunteer.html" title="Goes to Volunteer page">Volunteer</a></li>
+                    <li><a href="table.html" title="Goes to table page">Table</a></li>
+                    <li><a href="feedback.html" title="Goes feedback page">Feedback</a></li>
+                    <li><a href="profile.html" class="active" title="Goes to profile page">User Profile</a></li>
+                    <li><a href="team.html" title="Goes to team page">Team</a></li>
+                    <li><a href="sitemap.html" title="Goes to sitemap page">Sitemap</a></li>
+                </ul>
+            </nav>
         </div>
-        <nav>
-          <ul class="nav-links">
-            <li>
-              <a href="homepage.html" title="Goes to home page"
-                >Home</a
-              >
-            </li>
-            <li>
-              <a href="volunteer.html" title="Goes to Volunteer page"
-                >Volunteer</a
-              >
-            </li>
-            <li><a href="table.html" title="Goes to table page">Table</a></li>
-            <li>
-              <a href="feedback.html" title="Goes feedback page">Feedback</a>
-            </li>
-            <li>
-              <a href="profile.html" class="active" title="Goes to profile page"
-                >User Profile</a
-              >
-            </li>
-            <li><a href="team.html" title="Goes to team page">Team</a></li>
-            <li>
-              <a href="sitemap.html" title="Goes to sitemap page">Sitemap</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
     </header>
+
+    <br>
+    <br>
+    <br>
+    <br>
     <div class="profile-container">
         <form class="profile-form" action="#" method="post">
             <!-- Profile Header Section -->
@@ -61,67 +50,69 @@
                         <input type="text" id="quote" name="quote" placeholder="A quotation that captures your personality">
                     </div>
                     
-                    <div class="profile-info">
+                    <div class="info-row">
                         <div class="form-group info-item">
                             <label for="age">Age:</label>
-                            <input type="number" id="age" name="age" placeholder="21">
+                            <input type="number" id="age" name="age" placeholder="21" class="info-input">
                         </div>
+                        
                         <div class="form-group info-item">
                             <label for="work">Work:</label>
-                            <input type="text" id="work" name="work" placeholder="Student">
+                            <input type="text" id="work" name="work" placeholder="Student" class="info-input">
                         </div>
-                        <div class="form-group info-item">
-                            <label for="family">Family:</label>
-                            <input type="text" id="family" name="family" placeholder="Single">
+                        
+                        <div class="form-group info-item family-item">
+                            <label>Family Status:</label>
+                            <div class="radio-group">
+                                <input type="radio" id="single" name="family" value="Single">
+                                <label for="single">Single</label>
+                                <input type="radio" id="married" name="family" value="Married">
+                                <label for="married">Married</label>
+                            </div>
                         </div>
+                        
                         <div class="form-group info-item">
                             <label for="location">Location:</label>
-                            <input type="text" id="location" name="location" placeholder="London">
+                            <input type="text" id="location" name="location" placeholder="Sri Lanka" class="info-input">
                         </div>
                     </div>
                 </div>
             </div>
             
-
-        </form>
-    </div>
-            
             <hr class="divider">
             
-            <form class="goal-form">
+            <div class="goal-form">
                 <h2>Our Goals</h2>
                 <div class="goal-row">
-                  <!-- Goal 1 -->
-                  <div class="goal-card">
-                    <img src="images/goal.png" alt="Goal 1 Image">
-                    <label for="goal1">Goal 1</label>
-                    <input type="text" id="goal1" name="goal1" value="End Hunger">
-                  </div>
-              
-                  <!-- Goal 2 -->
-                  <div class="goal-card">
-                    <img src="images/goal.png" alt="Goal 2 Image">
-                    <label for="goal2">Goal 2</label>
-                    <input type="text" id="goal2" name="goal2" value="Improve Nutrition">
-                  </div>
-              
-                  <!-- Goal 3 -->
-                  <div class="goal-card">
-                    <img src="images/goal.png" alt="Goal 3 Image">
-                    <label for="goal3">Goal 3</label>
-                    <input type="text" id="goal3" name="goal3" value="Promote Sustainability">
-                  </div>
-              
-                  <!-- Goal 4 -->
-                  <div class="goal-card">
-                    <img src="images/goal.png" alt="Goal 4 Image">
-                    <label for="goal4">Goal 4</label>
-                    <input type="text" id="goal4" name="goal4" value="Zero Waste">
-                  </div>
+                    <!-- Goal 1 -->
+                    <div class="goal-card">
+                        <img src="images/goal.png" alt="Goal 1 Image">
+                        <label for="goal1">Goal 1</label>
+                        <input type="text" id="goal1" name="goal1" value="End Hunger">
+                    </div>
+                
+                    <!-- Goal 2 -->
+                    <div class="goal-card">
+                        <img src="images/goal.png" alt="Goal 2 Image">
+                        <label for="goal2">Goal 2</label>
+                        <input type="text" id="goal2" name="goal2" value="Improve Nutrition">
+                    </div>
+                
+                    <!-- Goal 3 -->
+                    <div class="goal-card">
+                        <img src="images/goal.png" alt="Goal 3 Image">
+                        <label for="goal3">Goal 3</label>
+                        <input type="text" id="goal3" name="goal3" value="Promote Sustainability">
+                    </div>
+                
+                    <!-- Goal 4 -->
+                    <div class="goal-card">
+                        <img src="images/goal.png" alt="Goal 4 Image">
+                        <label for="goal4">Goal 4</label>
+                        <input type="text" id="goal4" name="goal4" value="Zero Waste">
+                    </div>
                 </div>
-              </form>
-              
-              
+            </div>
             
             <hr class="divider">
             
