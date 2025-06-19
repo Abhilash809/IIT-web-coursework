@@ -57,7 +57,7 @@
 }
 
 #why-matters {
-  background-color: #fff;
+  background-color: #ffffff;
   padding: 60px 20px;
   display: flex;
   justify-content: center;
@@ -69,11 +69,12 @@
 }
 
 .aside-box {
-  background-color: #ffffff;
+  background-color: #f5f248;
   border-radius: 12px;
   padding: 30px;
   text-align: center;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3),
+    /* Strong primary shadow */ 0 6px 8px rgba(0, 0, 0, 0.15);
   background-image: url("images/aside-bg.png"); /* optional */
   background-size: cover;
   background-position: center;
@@ -99,7 +100,7 @@
 }
 
 .learn-btn {
-  background-color: #3498db;
+  background-color: #e67e22;
 }
 
 .learn-btn:hover {

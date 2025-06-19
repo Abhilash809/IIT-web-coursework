@@ -3,7 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Global.css" />
     <link rel="icon" type="image/png" href="images/logo.png" />
+    <title>Zero Hunger Sri Lanka</title>
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <title>Home page</title>
   </head>
@@ -13,7 +15,7 @@
       <br />
     </section>
     <header>
-      <link rel="stylesheet" href="header.css" />
+      <!--<link rel="stylesheet" href="header.css" />-->
       <div class="navbar">
         <div class="logo-title">
           <img src="images/logo.png" alt="Zero Hunger Logo" class="logo" />
@@ -51,7 +53,7 @@
       </div>
     </header>
 
-    <main>
+    <main class="wrapper">
       <link rel="stylesheet" href="homepageherosection.css" />
       <!-- HERO SECTION -->
       <section id="hero">
@@ -79,7 +81,7 @@
         </aside>
       </section>
     </main>
-
+    <!--
     <section id="mission">
       <link rel="stylesheet" href="homepagemission.css" />
       <div class="mission-content">
@@ -96,9 +98,9 @@
           educational resources to help build a hunger-free Sri Lanka.
         </p>
       </div>
-    </section>
-    <link rel="stylesheet" href="homepagecontent.css" />
+    </section>-->
     <section id="explore">
+      <link rel="stylesheet" href="homepagecontent.css" />
       <h2>🌱 Explore More</h2>
       <div class="card-container">
         <a href="content_ST1.html" class="tile-card">
@@ -126,19 +128,53 @@
         </a>
       </div>
     </section>
+    <link rel="stylesheet" href="homepagecalltoaction.css" />
+    <section id="call-to-action">
+      <div class="cta-wrapper">
+        <!-- LEFT: Volunteer Info -->
+        <div class="cta-info">
+          <h2>Together, We Can End Hunger</h2>
+          <p>
+            From volunteering to learning — take a step today to support
+            families in need.
+          </p>
+          <a href="volunteer.html" class="cta-btn">Explore Volunteer Options</a>
+        </div>
+
+        <!-- RIGHT: Donation Box -->
+        <div class="donation-box">
+          <h3>Make a Difference</h3>
+          <p class="donation-note">
+            <em>Your gift helps save lives all year long.</em>
+          </p>
+
+          <div class="amount-grid">
+            <button>$25</button>
+            <button>$65</button>
+            <button>$100</button>
+            <button>$250</button>
+            <button>$500</button>
+            <button>$1000</button>
+          </div>
+
+          <input type="text" placeholder="$ Other" class="donation-input" />
+          <a href="#" class="donate-btn">❤️ Donate Now</a>
+          <small class="secure-text">🔒 Secure Payment</small>
+        </div>
+      </div>
+    </section>
 
     <footer>
       <hr />
-      Made with care by Team Zero HUNGER <br />
-      &copy; copyright resevered2025 <br />
-      <style>
-        footer {
-          background-color: #777;
-          padding: 90px;
-          text-align: center;
-          color: white;
-        }
-      </style>
+      <p>
+        Made with care by Team Zero HUNGER<br />
+        <a href="editor_ST2.html">Page Editor</a><br />
+        <span
+          >This page follows accessibility guidelines (semantic tags, alt text,
+          contrast).</span
+        ><br />
+        &copy; 2025
+      </p>
     </footer>
   </body>
 </html>
