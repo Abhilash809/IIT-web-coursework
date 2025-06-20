@@ -12,11 +12,30 @@ form {
   gap: 20px 30px;
 }
 
+
+h2{
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  text-shadow: 1px 1px 1px;
+}
+
+.hero{
+  background-color: #f8d43c;
+  padding: 80px;
+}
+
+.logo-title{
+  margin-left: -150px;
+}
+
 fieldset {
-  border: none;
+  border: 2px solid;
+  border-color: #f8d43c;
   grid-column: span 2;
   margin: 0;
-  padding: 0;
+  padding: 20px;
+  border-radius: 20px;
 }
 
 legend {
