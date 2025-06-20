@@ -1,10 +1,12 @@
+console.log("sitemap.js is connected!");
+
 document.addEventListener('DOMContentLoaded', function() {
     // Make nodes keyboard accessible
     const nodes = document.querySelectorAll('.node-link');
-    
+
     nodes.forEach(node => {
         node.setAttribute('tabindex', '0');
-        
+
         node.addEventListener('keydown', function(e) {
             if (e.key === 'Enter' || e.key === ' ') {
                 e.preventDefault();
@@ -17,7 +19,9 @@ document.addEventListener('DOMContentLoaded', function() {
     const svgNodes = document.querySelectorAll('.node');
     svgNodes.forEach(node => {
         const altText = node.getAttribute('data-alt');
-        node.setAttribute('aria-label', altText);
+        if (altText) {
+            node.setAttribute('aria-label', altText);
+        }
     });
 
     // Focus styles for keyboard navigation
@@ -25,7 +29,10 @@ document.addEventListener('DOMContentLoaded', function() {
         if (e.key === 'Tab') {
             const focusedElement = document.activeElement;
             if (focusedElement.classList.contains('node-link')) {
-                focusedElement.querySelector('.node').setAttribute('filter', 'url(#glow)');
+                const targetNode = focusedElement.querySelector('.node');
+                if (targetNode) {
+                    targetNode.setAttribute('filter', 'url(#glow)');
+                }
             }
         }
     });
