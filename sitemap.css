@@ -1,123 +1,151 @@
-/* Sitemap Specific Styles */
+/* Sitemap specific styles */
 .sitemap-container {
     padding: 2rem;
     max-width: 1200px;
     margin: 0 auto;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 .sitemap-container h1 {
-    color: #e67e22;
+    color: #2c3e50;
     text-align: center;
-    margin-bottom: 0.5rem;
+    margin-bottom: 1rem;
 }
 
 .sitemap-container p {
     text-align: center;
-    color: #555;
     margin-bottom: 2rem;
+    color: #7f8c8d;
 }
 
 .svg-container {
-    width: 100%;
-    overflow: auto;
-    margin: 2rem 0;
+    margin: 2rem auto;
+    border: 1px solid #ecf0f1;
+    border-radius: 8px;
     padding: 1rem;
     background-color: #f9f9f9;
-    border-radius: 8px;
-    border: 1px solid #e0e0e0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
 }
 
-#sitemap {
-    width: 100%;
-    height: auto;
+/* SVG Styles */
+#sitemap-svg {
     display: block;
     margin: 0 auto;
 }
 
-/* Node Styles */
 .node {
-    stroke: #333;
-    stroke-width: 2px;
+    fill: #3498db;
+    stroke: #2980b9;
+    stroke-width: 2;
     transition: all 0.3s ease;
-}
-
-.main-node {
-    fill: #e67e22; /* Orange - matches Zero Hunger theme */
-}
-
-.level1 {
-    fill: #27ae60; /* Green - for main sections */
-}
-
-.level2 {
-    fill: #3498db; /* Blue - for secondary pages */
-}
-
-.level3 {
-    fill: #9b59b6; /* Purple - for content pages */
+    cursor: pointer;
 }
 
 .node:hover {
-    stroke: #000;
-    stroke-width: 3px;
-    filter: drop-shadow(0 0 8px rgba(0, 0, 0, 0.2));
-    transform: scale(1.05);
-}
-
-.connection {
-    stroke: #95a5a6;
-    stroke-width: 2;
-    stroke-dasharray: 5,5;
+    fill: #2980b9;
+    filter: drop-shadow(0 0 5px rgba(41, 128, 185, 0.5));
 }
 
 .node-text {
-    font-size: 14px;
-    font-weight: bold;
     fill: white;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
     pointer-events: none;
 }
 
-.node-link {
-    cursor: pointer;
-    outline: none;
+/* Different levels of nodes */
+.root-node {
+    fill: #27ae60;
+    stroke: #219653;
 }
 
-.node-link:focus .node {
-    stroke: #000;
-    stroke-width: 4px;
-    filter: drop-shadow(0 0 10px rgba(230, 126, 34, 0.5));
+.root-node:hover {
+    fill: #219653;
 }
 
-/* Accessibility Features */
-.node {
-    aria-label: attr(data-alt);
+.level1-node {
+    fill: #3498db;
+    stroke: #2980b9;
 }
 
-/* Footer Styles */
-footer {
-    background-color: #2c3e50;
-    color: white;
-    padding: 1.5rem;
-    text-align: center;
+.level1-node:hover {
+    fill: #2980b9;
+}
+
+.level2-node {
+    fill: #9b59b6;
+    stroke: #8e44ad;
+}
+
+.level2-node:hover {
+    fill: #8e44ad;
+}
+
+.level3-node {
+    fill: #e67e22;
+    stroke: #d35400;
+}
+
+.level3-node:hover {
+    fill: #d35400;
+}
+
+.level4-node {
+    fill: #e74c3c;
+    stroke: #c0392b;
+}
+
+.level4-node:hover {
+    fill: #c0392b;
+}
+
+.active-node {
+    fill: #f1c40f;
+    stroke: #f39c12;
+    filter: drop-shadow(0 0 8px rgba(241, 196, 15, 0.7));
+}
+
+.active-node:hover {
+    fill: #f39c12;
+}
+
+.connector {
+    stroke: #bdc3c7;
+    stroke-width: 2;
+    fill: none;
+}
+
+/* Accessibility section */
+.accessibility-note {
     margin-top: 2rem;
+    padding: 1.5rem;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    border-left: 4px solid #3498db;
 }
 
-.footer-content {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
+.accessibility-note h2 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
 }
 
-footer a {
-    color: #f1c40f;
-    text-decoration: none;
+.accessibility-note ul {
+    padding-left: 1.5rem;
 }
 
-footer a:hover {
-    text-decoration: underline;
+.accessibility-note li {
+    margin-bottom: 0.5rem;
+    color: #34495e;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .svg-container {
+        overflow-x: auto;
+    }
+    
+    #sitemap-svg {
+        width: 100%;
+        height: auto;
+    }
 }
