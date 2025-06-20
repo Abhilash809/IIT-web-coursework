@@ -8,16 +8,15 @@
   background-image: url("images/herosection.png");
   background-size: cover;
   background-position: center;
-  border-radius: 0px;
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3),
-    /* Strong primary shadow */ 0 6px 8px rgba(0, 0, 0, 0.15);
-  padding: 90px 60px; /* ✅ Bigger left-right padding */
+  width: 100%; /* Stretch horizontally full */
+  max-width: none; /* Allow full stretch */
+  padding: 90px 60px;
   color: white;
   text-align: center;
+  box-sizing: border-box;
+  border-radius: 0;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3), 0 6px 8px rgba(0, 0, 0, 0.15);
   position: relative;
-  max-width: 100%; /* ✅ allow full width */
-  width: 100%; /* ✅ actually use it */
-  box-sizing: border-box; /* ✅ padding stays inside */
 }
 
 .hero-overlay {
