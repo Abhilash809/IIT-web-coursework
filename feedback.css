@@ -12,16 +12,22 @@ form {
   gap: 20px 30px;
 }
 
+
 h2{
   text-align: center;
-  margin-top: 30px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  text-shadow: 1px 1px 1px;
 }
 
 .hero{
   background-color: #f8d43c;
-  padding: 10px;
+  padding: 80px;
 }
 
+.logo-title{
+  margin-left: -150px;
+}
 
 fieldset {
   border: 2px solid;
