@@ -1,151 +1,107 @@
-/* Sitemap specific styles */
-.sitemap-container {
-    padding: 2rem;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.sitemap-container h1 {
-    color: #2c3e50;
+/* ===== Enhanced Sitemap Styles ===== */
+h1 {
     text-align: center;
-    margin-bottom: 1rem;
+}
+/* Color Variables */
+:root {
+    --root-node: #27ae60;
+    --content-node: #3498db;
+    --feature-node: #2980b9;
+    --profile-node: #16a085;
+    --utility-node: #9b59b6;
+    --editor-node: #e67e22;
+    --current-node: #f1c40f;
+    --connector-color: #95a5a6;
 }
 
-.sitemap-container p {
-    text-align: center;
-    margin-bottom: 2rem;
-    color: #7f8c8d;
-}
-
-.svg-container {
-    margin: 2rem auto;
-    border: 1px solid #ecf0f1;
-    border-radius: 8px;
-    padding: 1rem;
-    background-color: #f9f9f9;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
-}
-
-/* SVG Styles */
-#sitemap-svg {
-    display: block;
-    margin: 0 auto;
-}
-
-.node {
-    fill: #3498db;
-    stroke: #2980b9;
-    stroke-width: 2;
-    transition: all 0.3s ease;
-    cursor: pointer;
-}
-
-.node:hover {
-    fill: #2980b9;
-    filter: drop-shadow(0 0 5px rgba(41, 128, 185, 0.5));
-}
-
-.node-text {
-    fill: white;
-    font-family: Arial, sans-serif;
-    font-size: 12px;
-    font-weight: bold;
-    pointer-events: none;
-}
-
-/* Different levels of nodes */
+/* Node Styles */
 .root-node {
-    fill: #27ae60;
-    stroke: #219653;
-}
-
-.root-node:hover {
-    fill: #219653;
+    fill: var(--root-node);
+    stroke: darken(var(--root-node), 10%);
 }
 
 .level1-node {
-    fill: #3498db;
-    stroke: #2980b9;
+    fill: var(--content-node);
+    stroke: darken(var(--content-node), 10%);
 }
 
-.level1-node:hover {
-    fill: #2980b9;
+.features-group .level1-node {
+    fill: var(--feature-node);
+    stroke: darken(var(--feature-node), 10%);
+}
+
+.features-group a[aria-label*="Profile"] .level1-node {
+    fill: var(--profile-node);
+    stroke: darken(var(--profile-node), 10%);
 }
 
 .level2-node {
-    fill: #9b59b6;
-    stroke: #8e44ad;
+    fill: var(--utility-node);
+    stroke: darken(var(--utility-node), 10%);
 }
 
-.level2-node:hover {
-    fill: #8e44ad;
+.current-node {
+    fill: var(--current-node);
+    stroke: darken(var(--current-node), 20%);
+    stroke-width: 3px;
+    filter: drop-shadow(0 0 8px rgba(241, 196, 15, 0.5));
 }
 
 .level3-node {
-    fill: #e67e22;
-    stroke: #d35400;
+    fill: var(--editor-node);
+    stroke: darken(var(--editor-node), 10%);
 }
 
-.level3-node:hover {
-    fill: #d35400;
-}
-
-.level4-node {
-    fill: #e74c3c;
-    stroke: #c0392b;
-}
-
-.level4-node:hover {
-    fill: #c0392b;
-}
-
-.active-node {
-    fill: #f1c40f;
-    stroke: #f39c12;
-    filter: drop-shadow(0 0 8px rgba(241, 196, 15, 0.7));
-}
-
-.active-node:hover {
-    fill: #f39c12;
-}
-
-.connector {
-    stroke: #bdc3c7;
+/* Connector Styles */
+.connector-line {
+    stroke: var(--connector-color);
     stroke-width: 2;
     fill: none;
 }
 
-/* Accessibility section */
-.accessibility-note {
-    margin-top: 2rem;
-    padding: 1.5rem;
-    background-color: #f8f9fa;
-    border-radius: 8px;
-    border-left: 4px solid #3498db;
+/* Group Styles */
+.content-group .node:hover {
+    fill: lighten(var(--content-node), 10%);
 }
 
-.accessibility-note h2 {
-    color: #2c3e50;
-    margin-bottom: 1rem;
+.features-group .node:hover {
+    fill: lighten(var(--feature-node), 10%);
 }
 
-.accessibility-note ul {
-    padding-left: 1.5rem;
+.features-group a[aria-label*="Profile"] .node:hover {
+    fill: lighten(var(--profile-node), 10%);
 }
 
-.accessibility-note li {
-    margin-bottom: 0.5rem;
-    color: #34495e;
+/* Legend Styles */
+.legend text {
+    font-family: 'Roboto', sans-serif;
+    fill: #64a6e9;
 }
 
-/* Responsive adjustments */
+/* Responsive Adjustments */
+@media (max-width: 992px) {
+    #sitemap-svg {
+        transform: scale(0.8);
+        transform-origin: top left;
+    }
+}
+
 @media (max-width: 768px) {
-    .svg-container {
-        overflow-x: auto;
+    #sitemap-svg {
+        transform: scale(0.6);
     }
     
+    .legend {
+        transform: scale(0.8) translate(0, 50px);
+    }
+}
+
+@media (max-width: 576px) {
     #sitemap-svg {
-        width: 100%;
-        height: auto;
+        transform: scale(0.4);
+    }
+    
+    .legend {
+        transform: scale(0.7) translate(0, 100px);
     }
 }
