@@ -45,22 +45,19 @@
       <br />
       <br />
       <br />
-      <div class="profile-container">
-        <form class="profile-form" action="#" method="post">
-          <!-- Profile Header Section -->
-          <div class="profile-header">
-            <div class="profile-picture-container">
-              <img
-                src="images/check 4.jpg"
-                alt="Profile Picture"
-                class="profile-picture"
-              />
-              <input
-                type="file"
-                id="profile-pic-upload"
-                name="profile_picture"
-                accept="image/*"
-              />
+<!-- Only showing the changed parts for brevity -->
+<div class="profile-container">
+  <form class="profile-form" action="#" method="post">
+    <!-- Profile Header Section - Enhanced with better structure -->
+    <div class="profile-header">
+      <div class="profile-picture-container">
+        <div class="picture-wrapper">
+          <img src="images/check 4.jpg" alt="Profile Picture" class="profile-picture" />
+          <label for="profile-pic-upload" class="upload-label">
+            <i class="upload-icon">📷</i>
+          </label>
+          <input type="file" id="profile-pic-upload" name="profile_picture" accept="image/*" />
+        </div>
             </div>
             <div class="profile-text">
               <div class="form-group">
@@ -143,7 +140,7 @@
           <hr class="divider" />
 
           <div class="goal-form">
-            <h2>Our Goals</h2>
+            <h2><span class="section-icon">🎯</span>Our Goals</h2>
             <div class="goal-row">
               <!-- Goal 1 -->
               <div class="goal-card">
