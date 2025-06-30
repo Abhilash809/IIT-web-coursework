@@ -1,5 +1,5 @@
 .hero-banner {
-    background-image: url('images/organic-hero.jpg');
+    background-image: url('images/traditional-hero.jpg');
     background-size: cover;
     background-position: center;
     height: 400px;
@@ -9,6 +9,7 @@
     color: var(--text-light);
     text-align: center;
     padding: 20px;
+    border-radius: 15px;
   }
   
   .hero-banner h1 {
@@ -24,6 +25,8 @@
     margin: auto;
     padding: 50px 20px;
   }
+  
+  
   
   .container h2 {
     color: var(--primary-dark);
