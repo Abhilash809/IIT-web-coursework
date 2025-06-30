@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Video Background Test</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .video-background {
+            position: relative;
+            width: 100%;
+            height: 500px;
+            overflow: hidden;
+        }
+
+        .video-background video {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            min-width: 100%;
+            min-height: 100%;
+            transform: translate(-50%, -50%);
+            object-fit: cover;
+            z-index: 1;
+        }
+
+        .video-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 2;
+        }
+
+        .text-container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 3;
+            text-align: center;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 20px 30px;
+            border-radius: 12px;
+            max-width: 700px;
+        }
+
+        .mission-heading {
+            color: #fff;
+            font-size: 36px;
+            font-weight: bold;
+            margin-bottom: 15px;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+        }
+
+        .mission-subtext {
+            color: #fff;
+            font-size: 20px;
+            line-height: 1.4;
+            text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.8);
+        }
+    </style>
+</head>
+
+<body>
+
+    <section id="mission">
+        <div class="video-background">
+            <video autoplay muted loop playsinline>
+                <source src="background videos/srilanka_farming.mp4" type="video/mp4" />
+                Your browser does not support HTML5 video.
+            </video>
+
+            <div class="video-overlay"></div>
+
+            <div class="text-container">
+                <h2 class="mission-heading">Why This Website Matters</h2>
+                <p class="mission-subtext">
+                    We’re building a hunger-free Sri Lanka by supporting SDG Goal 2 — Zero Hunger.
+                    Learn, share, and take action to make a difference.
+                </p>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>
