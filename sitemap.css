@@ -1,107 +1,74 @@
-/* ===== Enhanced Sitemap Styles ===== */
-h1 {
+body {
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    zoom: 1.2;
+    background: rgba(255,255,255,0.95);
+    margin: 10;
+    width: 100%;
+    padding: 0;
+    display: flex;
+    flex-direction: column; 
+    min-height: 100vh; 
+}
+
+.card {
+    width: 90%;
+    max-width: 900px;
+    margin: 40px auto;
+    background-color: #FFF5E4;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.card-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #FFF5E4;
+    border-radius: 8px;
+}
+section{
+    position: relative;
+    
+}
+h2{
     text-align: center;
+    font-size: xx-large;
+    text-decoration-color: black;
+    text-decoration-line: initial;
+    font-family: 'Times New Roman', Times, serif;
+    color: whitesmoke;
 }
-/* Color Variables */
-:root {
-    --root-node: #27ae60;
-    --content-node: #3498db;
-    --feature-node: #2980b9;
-    --profile-node: #16a085;
-    --utility-node: #9b59b6;
-    --editor-node: #e67e22;
-    --current-node: #f1c40f;
-    --connector-color: #95a5a6;
+svg {
+    width: 100%;
+    height: auto;
 }
-
-/* Node Styles */
-.root-node {
-    fill: var(--root-node);
-    stroke: darken(var(--root-node), 10%);
+.node {
+    fill: #f4d03f;
+    r: 20px;
+    stroke: #807575;
+    stroke-width: 3;
+    cursor: pointer;
+    transition: fill 0.3s;
 }
-
-.level1-node {
-    fill: var(--content-node);
-    stroke: darken(var(--content-node), 10%);
+.node:hover, .node:focus {
+    fill: #FF9800;
 }
 
-.features-group .level1-node {
-    fill: var(--feature-node);
-    stroke: darken(var(--feature-node), 10%);
+.line{
+    stroke: #807575;
+    fill: #f4d03f;
 }
 
-.features-group a[aria-label*="Profile"] .level1-node {
-    fill: var(--profile-node);
-    stroke: darken(var(--profile-node), 10%);
+.text-content{
+    font-size: 1.5rem;
 }
 
-.level2-node {
-    fill: var(--utility-node);
-    stroke: darken(var(--utility-node), 10%);
-}
 
-.current-node {
-    fill: var(--current-node);
-    stroke: darken(var(--current-node), 20%);
-    stroke-width: 3px;
-    filter: drop-shadow(0 0 8px rgba(241, 196, 15, 0.5));
-}
-
-.level3-node {
-    fill: var(--editor-node);
-    stroke: darken(var(--editor-node), 10%);
-}
-
-/* Connector Styles */
-.connector-line {
-    stroke: var(--connector-color);
-    stroke-width: 2;
-    fill: none;
-}
-
-/* Group Styles */
-.content-group .node:hover {
-    fill: lighten(var(--content-node), 10%);
-}
-
-.features-group .node:hover {
-    fill: lighten(var(--feature-node), 10%);
-}
-
-.features-group a[aria-label*="Profile"] .node:hover {
-    fill: lighten(var(--profile-node), 10%);
-}
-
-/* Legend Styles */
-.legend text {
-    font-family: 'Roboto', sans-serif;
-    fill: #64a6e9;
-}
-
-/* Responsive Adjustments */
-@media (max-width: 992px) {
-    #sitemap-svg {
-        transform: scale(0.8);
-        transform-origin: top left;
-    }
-}
-
-@media (max-width: 768px) {
-    #sitemap-svg {
-        transform: scale(0.6);
-    }
-    
-    .legend {
-        transform: scale(0.8) translate(0, 50px);
-    }
-}
-
-@media (max-width: 576px) {
-    #sitemap-svg {
-        transform: scale(0.4);
-    }
-    
-    .legend {
-        transform: scale(0.7) translate(0, 100px);
-    }
+text {
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    text-anchor: middle;
 }
