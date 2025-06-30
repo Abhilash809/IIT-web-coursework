@@ -10,7 +10,6 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="sitemap.css">
-    <link rel="stylesheet" href="style.css">
   </head>
 
   <body>
@@ -51,177 +50,166 @@
     </header>
 
     <main class="wrapper">
+      <svg viewBox="0 0 900 600" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="sitemapTitle">
+        <title id="sitemapTitle">Website Sitemap</title>
+         <!--Main pages svg designs -->
+        <a href="home.html" tabindex="0">
+            <rect class="node" x="400" y="50" width="100" height="50" rx="0"></rect>
+            <text x="450" y="80">Home</text>
+        </a>
+       
+        
+        <a href="splash.html" tabindex="0">
+            <rect class="node" x="200" y="50" width="100" height="50" rx="20"></rect>
+            <text x="250" y="80">Splash</text>
+        </a>
+        
+        <a href="volunteer.html" tabindex="0">
+            <rect class="node" x="480" y="230" width="73" height="50" rx="20"></rect>
+            <text x="517" y="260">Volunteer</text>
+        </a>
 
-      <article class="sitemap-article">
-          <header class="article-header">
-            <h1>Website Structure Overview</h1>
-            <p class="subtitle">Interactive visual representation of our website's information architecture</p>
-          </header>
+        <a href="team.html" tabindex="0">
+            <rect class="node" x="20" y="230" width="70" height="50" rx="20"></rect>
+            <text x="55" y="260">Team</text>
+        </a>
+       
+        <a href="table.html" tabindex="0">
+            <rect class="node" x="700" y="230"  width="70" height="50" rx="20"></rect>
+            <text x="735" y="260">Table</text>
+        </a>
+      <a href="profile.html" tabindex="0">
+        <rect class="node" x="810" y="230"  width="70" height="50" rx="20"></rect>
+            <text x="845" y="260">Profile</text>
+        </a>
+        
 
-          <section class="sitemap-section" aria-labelledby="sitemap-diagram">
-              <div class="sitemap-container">
-                  <svg id="sitemap-svg" viewBox="0 0 1200 900" role="img" aria-labelledby="sitemap-title sitemap-desc">
-                      <title id="sitemap-title">Hierarchical website structure diagram</title>
-                      <desc id="sitemap-desc">
-                          This diagram shows the complete structure of our Sustainable Development Goals website,
-                          including all main pages and their hierarchical relationships.
-                      </desc>
-                      
-                      <!-- Root Node -->
-                      <a xlink:href="home.html" class="node-link" aria-label="Home - Main website entry point">
-                          <rect x="550" y="50" width="200" height="80" rx="15" class="node root-node"/>
-                          <text x="650" y="85" class="node-text">Home</text>
-                          <text x="650" y="105" class="node-subtext">Primary Entry Point</text>
-                      </a>
+        <a href="feedback.html" tabindex="0">
+            <rect class="node" x="140" y="230"  width="72" height="50" rx="20"></rect>
+            <text x="175" y="260">Feedback</text>
+        </a>
+        
+        <a href="sitemap.html" tabindex="0">
+            
+            <rect class="node" x="370" y="230"  width="70" height="50" rx="20"></rect>
+            <text x="405" y="260">Sitemap</text>
+        </a>
 
-                      <!-- Level 1 Nodes -->
-                      <g class="level-1-group">
-                          <!-- Content Pages Group -->
-                          <g class="content-group">
-                              <a xlink:href="content_ST1.html" class="node-link" aria-label="Content Page 1">
-                                  <rect x="100" y="200" width="160" height="70" rx="10" class="node level1-node"/>
-                                  <text x="180" y="230" class="node-text">Content 1</text>
-                                  <text x="180" y="250" class="node-subtext">Student 1</text>
-                              </a>
-                              
-                              <a xlink:href="content_ST2.html" class="node-link" aria-label="Content Page 2">
-                                  <rect x="300" y="200" width="160" height="70" rx="10" class="node level1-node"/>
-                                  <text x="380" y="230" class="node-text">Content 2</text>
-                                  <text x="380" y="250" class="node-subtext">Student 2</text>
-                              </a>
-                              
-                              <a xlink:href="content_ST3.html" class="node-link" aria-label="Content Page 3">
-                                  <rect x="500" y="200" width="160" height="70" rx="10" class="node level1-node"/>
-                                  <text x="580" y="230" class="node-text">Content 3</text>
-                                  <text x="580" y="250" class="node-subtext">Student 3</text>
-                              </a>
-                              
-                              <a xlink:href="content_ST4.html" class="node-link" aria-label="Content Page 4">
-                                  <rect x="700" y="200" width="160" height="70" rx="10" class="node level1-node"/>
-                                  <text x="780" y="230" class="node-text">Content 4</text>
-                                  <text x="780" y="250" class="node-subtext">Student 4</text>
-                              </a>
-                          </g>
+        <rect class="node" x="260" y="230"  width="70" height="50" rx="50"></rect>
+            
+            <text x="295" y="260">Content</text>
+        
 
-                          <!-- Main Features Group -->
-                          <g class="features-group">
-                              <a xlink:href="volunteer.html" class="node-link" aria-label="Volunteer Opportunities">
-                                  <rect x="150" y="350" width="160" height="70" rx="10" class="node level1-node"/>
-                                  <text x="230" y="380" class="node-text">Volunteer</text>
-                                  <text x="230" y="400" class="node-subtext">Opportunities</text>
-                              </a>
-                              
-                              <a xlink:href="table.html" class="node-link" aria-label="Data Tables">
-                                  <rect x="350" y="350" width="160" height="70" rx="10" class="node level1-node"/>
-                                  <text x="430" y="380" class="node-text">Data</text>
-                                  <text x="430" y="400" class="node-subtext">Statistics</text>
-                              </a>
-                              
-                              <a xlink:href="profile.html" class="node-link" aria-label="User Profile">
-                                  <rect x="550" y="350" width="160" height="70" rx="10" class="node level1-node"/>
-                                  <text x="630" y="380" class="node-text">Profile</text>
-                                  <text x="630" y="400" class="node-subtext">User Account</text>
-                              </a>
-                          </g>
-                      </g>
+       
+        <rect class="node" x="590" y="230"  width="70" height="50" rx="10"></rect>
+        <text x="625" y="260">Validation</text>
+    
 
-                      <!-- Level 2 Nodes -->
-                      <g class="level-2-group">
-                          <a xlink:href="feedback.html" class="node-link" aria-label="Feedback Form">
-                              <rect x="250" y="500" width="160" height="70" rx="10" class="node level2-node"/>
-                              <text x="330" y="530" class="node-text">Feedback</text>
-                              <text x="330" y="550" class="node-subtext">User Comments</text>
-                          </a>
-                          
-                          <a xlink:href="team.html" class="node-link" aria-label="Development Team">
-                              <rect x="450" y="500" width="160" height="70" rx="10" class="node level2-node"/>
-                              <text x="530" y="530" class="node-text">Team</text>
-                              <text x="530" y="550" class="node-subtext">Developers</text>
-                          </a>
-                          
-                          <a xlink:href="sitemap.html" class="node-link" aria-label="Sitemap" aria-current="page">
-                              <rect x="650" y="500" width="160" height="70" rx="10" class="node level2-node current-node"/>
-                              <text x="730" y="530" class="node-text">Sitemap</text>
-                              <text x="730" y="550" class="node-subtext">Structure</text>
-                          </a>
-                      </g>
+        <!--Editor  pages-->
+        <a href="pageEditor_ST1.html" tabindex="0">
+            <rect class="node" x="120" y="320"  width="100" height="40" rx="50"></rect>
+            
+            <text x="170" y="345">page Editor-1</text>
+        </a>
+        <a href="pageEditor_ST2.html" tabindex="0">
+            <rect class="node" x="120" y="370"  width="100" height="40" rx="50"></rect>
+            
+            <text x="170" y="395"> Page Editor-2</text>
+        </a>
+        <a href="pageEditor_ST3.html" tabindex="0">
+            <rect class="node" x="120" y="420"  width="100" height="40" rx="50"></rect>
+            
+            <text x="170" y="445">Page Editor-3</text>
 
-                      <!-- Level 3 Nodes (Editor/Validation) -->
-                      <g class="level-3-group">
-                          <a xlink:href="pageEditor_ST1.html" class="node-link" aria-label="Page Editor 1">
-                              <rect x="100" y="650" width="140" height="60" rx="8" class="node level3-node"/>
-                              <text x="170" y="680" class="node-text">Editor 1</text>
-                          </a>
-                          
-                          <a xlink:href="pageEditor_ST2.html" class="node-link" aria-label="Page Editor 2">
-                              <rect x="300" y="650" width="140" height="60" rx="8" class="node level3-node"/>
-                              <text x="370" y="680" class="node-text">Editor 2</text>
-                          </a>
-                          
-                          <a xlink:href="pageEditor_ST3.html" class="node-link" aria-label="Page Editor 3">
-                              <rect x="500" y="650" width="140" height="60" rx="8" class="node level3-node"/>
-                              <text x="570" y="680" class="node-text">Editor 3</text>
-                          </a>
-                          
-                          <a xlink:href="pageEditor_ST4.html" class="node-link" aria-label="Page Editor 4">
-                              <rect x="700" y="650" width="140" height="60" rx="8" class="node level3-node"/>
-                              <text x="770" y="680" class="node-text">Editor 4</text>
-                          </a>
-                      </g>
+        </a>
+        <a href="pageEditor_ST4.html" tabindex="0">
+            <rect class="node" x="120" y="470"  width="100" height="40" rx="50"></rect>
+            
+            <text x="170" y="495">Page Editor-3</text>
 
-                      <!-- Connectors -->
-                      <g class="connectors">
-                          <!-- Home to Level 1 -->
-                          <path d="M 650 130 C 650 180, 180 200, 180 200" class="connector-line"/>
-                          <path d="M 650 130 C 650 180, 380 200, 380 200" class="connector-line"/>
-                          <path d="M 650 130 C 650 180, 580 200, 580 200" class="connector-line"/>
-                          <path d="M 650 130 C 650 180, 780 200, 780 200" class="connector-line"/>
-                          <path d="M 650 130 C 650 180, 230 350, 230 350" class="connector-line"/>
-                          <path d="M 650 130 C 650 180, 430 350, 430 350" class="connector-line"/>
-                          <path d="M 650 130 C 650 180, 630 350, 630 350" class="connector-line"/>
-                          
-                          <!-- Level 1 to Level 2 -->
-                          <path d="M 230 420 C 230 450, 330 500, 330 500" class="connector-line"/>
-                          <path d="M 430 420 C 430 450, 530 500, 530 500" class="connector-line"/>
-                          <path d="M 630 420 C 630 450, 730 500, 730 500" class="connector-line"/>
-                          
-                          <!-- Level 2 to Level 3 -->
-                          <path d="M 330 570 C 330 600, 170 650, 170 650" class="connector-line"/>
-                          <path d="M 530 570 C 530 600, 370 650, 370 650" class="connector-line"/>
-                          <path d="M 730 570 C 730 600, 570 650, 570 650" class="connector-line"/>
-                          <path d="M 730 570 C 730 600, 770 650, 770 650" class="connector-line"/>
-                      </g>
+        </a>
+        <!--content pages-->
+        <a href="content_ST1.html" tabindex="0">
+            <rect class="node" x="360" y="320"  width="100" height="40" rx="50"></rect>
+            
+            <text x="410" y="345">Content-1</text>
+        </a>
+            <a href="content_ST2.html" tabindex="0">
+                <rect class="node" x="360" y="370"  width="100" height="40" rx="50"></rect>
+                
+                <text x="410" y="395">Content-2</text>
 
-                      <!-- Legend -->
-                      <g class="legend" transform="translate(50, 750)">
-                          <rect x="0" y="0" width="200" height="100" rx="10" fill="#f8f9fa" stroke="#ddd"/>
-                          <text x="100" y="25" text-anchor="middle" font-weight="bold" fill="#2c3e50">Legend</text>
-                          
-                          <g transform="translate(20, 40)">
-                              <rect width="15" height="15" rx="3" fill="#27ae60"/>
-                              <text x="25" y="13" font-size="12">Main Pages</text>
-                          </g>
-                          
-                          <g transform="translate(20, 65)">
-                              <rect width="15" height="15" rx="3" fill="#3498db"/>
-                              <text x="25" y="13" font-size="12">Content Pages</text>
-                          </g>
-                          
-                          <g transform="translate(20, 90)">
-                              <rect width="15" height="15" rx="3" fill="#9b59b6"/>
-                              <text x="25" y="13" font-size="12">Utility Pages</text>
-                          </g>
-                      </g>
-                  </svg>
-              </div>
-          </section>
+            </a>
+            <a href="content_ST3.html" tabindex="0">
+                <rect class="node" x="360" y="420"  width="100" height="40" rx="50"></rect>
+                <text x="410" y="445">Content-3</text>
 
-      </article>
-      
+            </a>
+            <a href="content_ST4.html" tabindex="0">
+                <rect class="node" x="360" y="470"  width="100" height="40" rx="50"></rect>
+                
+                <text x="410" y="495">Content-4</text>
+
+            </a>
+            <!--validation pages-->
+            <a href="validation_ST1.html" tabindex="0">
+                <rect class="node" x="700" y="320"  width="100" height="40" rx="50"></rect>
+                
+                <text x="750" y="345">Student-1</text>
+            </a>
+            <a href="validation_ST2.html" tabindex="0">
+                <rect class="node" x="700" y="370"  width="100" height="40" rx="50"></rect>
+                <text x="750" y="395">Student-2</text>
+    
+            </a>
+            <a href="validation_ST3.html" tabindex="0">
+                <rect class="node" x="700" y="420"  width="100" height="40" rx="50"></rect>
+                
+                <text x="750" y="445">Student-3</text>
+
+            </a>
+            <a href="validation_ST4.html" tabindex="0">
+                <rect class="node" x="700" y="470"  width="100" height="40" rx="50"></rect>
+                
+                <text x="750" y="495">Student-4</text>
+
+            </a>
+
+        <line x1="300" y1="75" x2="400" y2="75" stroke="#51ba88" stroke-width="3" />
+        <line x1="450" y1="170" x2="450" y2="100" stroke="#51ba88" stroke-width="3" />
+        <line x1="90" y1="170" x2="800" y2="170" stroke="#51ba88" stroke-width="3" />
+        <line x1="50" y1="170" x2="840" y2="170" stroke="#51ba88" stroke-width="3" />
+        <line x1="50" y1="170" x2="50" y2="230" stroke="#51ba88" stroke-width="3" />
+        <line x1="840" y1="170" x2="840" y2="230" stroke="#51ba88" stroke-width="3" />
+        <line x1="175" y1="170" x2="175" y2="230" stroke="#51ba88" stroke-width="3" />
+        <line x1="295" y1="170" x2="295" y2="230" stroke="#51ba88" stroke-width="3" />
+        <line x1="405" y1="170" x2="405" y2="230" stroke="#51ba88" stroke-width="3" />
+        <line x1="515" y1="170" x2="515" y2="230" stroke="#51ba88" stroke-width="3" />
+        <line x1="625" y1="170" x2="625" y2="230" stroke="#51ba88" stroke-width="3" />
+        <line x1="735" y1="170" x2="735" y2="230" stroke="#51ba88" stroke-width="3" />
+
+        <line x1="50" y1="491.5" x2="50" y2="281" stroke="#51ba88" stroke-width="3" />
+        <line x1="50" y1="340" x2="120" y2="340" stroke="#51ba88" stroke-width="3" />
+        <line x1="50" y1="390" x2="120" y2="390" stroke="#51ba88" stroke-width="3" />
+        <line x1="50" y1="440" x2="120" y2="440" stroke="#51ba88" stroke-width="3" />
+        <line x1="50" y1="490" x2="120" y2="490" stroke="#51ba88" stroke-width="3" />
+
+        <line x1="295" y1="491.5" x2="295" y2="281" stroke="#51ba88" stroke-width="3" />
+        <line x1="295" y1="340" x2="360" y2="340" stroke="#51ba88" stroke-width="3" />
+        <line x1="295" y1="390" x2="360" y2="390" stroke="#51ba88" stroke-width="3" />
+        <line x1="295" y1="440" x2="360" y2="440" stroke="#51ba88" stroke-width="3" />
+        <line x1="295" y1="490" x2="360" y2="490" stroke="#51ba88" stroke-width="3" />
+
+        <line x1="625" y1="491.5" x2="625" y2="281" stroke="#51ba88" stroke-width="3" />
+        <line x1="625" y1="340" x2="700" y2="340" stroke="#51ba88" stroke-width="3" />
+        <line x1="625" y1="390" x2="700" y2="390" stroke="#51ba88" stroke-width="3" />
+        <line x1="625" y1="440" x2="700" y2="440" stroke="#51ba88" stroke-width="3" />
+        <line x1="625" y1="490" x2="700" y2="490" stroke="#51ba88" stroke-width="3" />
+
+      </svg>
     </main>        
   
     <footer>
-      <hr />
       <p>
         Made with care by Team Zero HUNGER<br />
         <a href="editor_ST2.html">Page Editor</a><br />
