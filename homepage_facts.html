@@ -29,11 +29,11 @@
             padding: 20px;
         }
 
-        .hero-banner h1 {
+        .container h1 {
             font-size: 36px;
             font-family: 'Poppins', sans-serif;
-            background-color: rgba(0, 0, 0, 0.5);
-            padding: 10px 20px;
+            background-color: #f4d03f;
+            padding: 20px;
             border-radius: 8px;
         }
 
@@ -118,6 +118,46 @@
             color: #e67e22;
             text-decoration: none;
         }
+
+        .cause-block {
+            background-color: #ffffff;
+            border-left: 5px solid #f39c12;
+            padding: 20px 30px;
+            margin-bottom: 30px;
+            border-radius: 10px;
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3), 0 6px 8px rgba(0, 0, 0, 0.15);
+            transition: transform 0.3s ease;
+        }
+
+        .cause-block:hover {
+            transform: translateY(-3px);
+        }
+
+        .cause-block h3 {
+            font-size: 22px;
+            color: #d35400;
+            margin-bottom: 10px;
+        }
+
+        .cause-block p {
+            font-size: 16px;
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+
+        .source-link {
+            display: inline-block;
+            font-size: 14px;
+            color: #e67e22;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.2s ease;
+        }
+
+        .source-link:hover {
+            color: #ca6f1e;
+            text-decoration: underline;
+        }
     </style>
 </head>
 
@@ -150,16 +190,13 @@
                 </ul>
             </nav>
         </div>
+
     </header>
     <br>
     <br>
     <br>
     <br>
-
-
-    <div class="hero-banner">
-        <h1>Understanding Hunger in Sri Lanka</h1>
-    </div>
+    <h1>Understanding Hunger in Sri Lanka</h1>
     <div class="container">
         <h1>Facts About Hunger in Sri Lanka</h1>
 
@@ -243,6 +280,44 @@
             </ul>
         </div>
     </div>
+
+    <section id="causes" class="causes-section">
+        <h2>Main Causes of Hunger in Sri Lanka</h2>
+
+        <div class="cause-block">
+            <h3>💸 Economic Crisis</h3>
+            <p>
+                Sri Lanka’s debt crisis and lack of foreign reserves have made it difficult to import essential goods
+                like food, fertilizer, and fuel.
+            </p>
+            <a href="https://www.bbc.com/news/world-asia-62231209" class="source-link" target="_blank"
+                rel="noopener">Read Source →</a>
+        </div>
+
+        <div class="cause-block">
+            <h3>📈 Inflation & Devaluation</h3>
+            <p>
+                Rising inflation and a devalued rupee have caused food prices to skyrocket, making meals unaffordable
+                for many families.
+            </p>
+            <a href="https://www.reuters.com/markets/asia/sri-lankas-inflation-rises-food-crisis-2023"
+                class="source-link" target="_blank" rel="noopener">Read Source →</a>
+        </div>
+
+        <div class="cause-block">
+            <h3>🧪 Fertilizer Ban</h3>
+            <p>
+                The sudden ban on chemical fertilizers in 2021 led to reduced agricultural yields and worsened the
+                country's food shortage.
+            </p>
+            <a href="https://www.aljazeera.com/news/2022/1/10/sri-lankas-fertiliser-ban" class="source-link"
+                target="_blank" rel="noopener">Read Source →</a>
+        </div>
+
+        <!-- Add more cause-blocks as needed -->
+    </section>
+
+
     <footer>
         <hr />
         <p>

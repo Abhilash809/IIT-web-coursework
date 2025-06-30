@@ -95,6 +95,16 @@ header {
   border-bottom: 2px solid var(--link-hover);
 }
 
+.video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    object-fit: cover;
+  }
+
 /* ========== Footer ========== */
 footer {
   background-color: var(--footer-bg);
