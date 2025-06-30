@@ -2,7 +2,7 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  /*box-sizing: border-box;*/
 }
 
 body {
@@ -95,6 +95,7 @@ header {
   border-bottom: 2px solid var(--link-hover);
 }
 
+/* ========== Background Video ========== */
 .video-background {
     position: fixed;
     top: 0;
