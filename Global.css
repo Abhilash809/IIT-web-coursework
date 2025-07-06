@@ -106,6 +106,9 @@ header {
     object-fit: cover;
   }
 
+/*===========Background video=======*/
+
+
 /* ========== Footer ========== */
 footer {
   background: #ffd000;
@@ -114,6 +117,7 @@ footer {
   font-family: Arial, sans-serif;
   text-align: center;
 }
+
 
 .footer-container {
   max-width: 700px;

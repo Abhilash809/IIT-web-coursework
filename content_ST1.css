@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
     .body_content {
       font-family: Arial, sans-serif;
       font-size: 20px;
@@ -7,43 +8,54 @@
       line-height: 1.6;
       color: #333;
     }
+=======
+html {
+  scroll-behavior: smooth;
+}
+>>>>>>> Stashed changes
 
-    header {
-      background-color: #ffd000;
-      color: rgb(0, 0, 0);
-      text-align: center;
-      padding: 2rem 1rem;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    }
+body {
+  font-family: Arial, sans-serif;
+  font-size: 20px;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  color: #333;
+}
 
-    header h1 {
-      margin: 0;
-      font-size: 2.2rem;
-    }
+header {
+  background-color: #ffd000;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 2rem 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
 
-    main {
-      padding: 2rem 0;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
+header h1 {
+  margin: 0;
+  font-size: 2.2rem;
+}
 
-    section {
-      width: 90%;
-      max-width: 1800px;
-      margin-bottom: 2rem;
-      background-color: #fff8c2;
-      padding: 2.2rem 3.5rem;
-      border-left: 8px solid #ffd000;
-      border-radius: 4px;
-      box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
-    }
+main {
+  padding: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
-    h2 {
-      color: #000000;
-      margin-top: 0;
-    }
+section {
+  width: 90%;
+  max-width: 1800px;
+  margin-bottom: 2rem;
+  background-color: #fff8c2;
+  padding: 2.2rem 3.5rem;
+  border-left: 8px solid #ffd000;
+  border-radius: 4px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
+}
 
+<<<<<<< Updated upstream
     .intro-img {
       width: 100%;
       height: 350px;
@@ -51,48 +63,78 @@
       object-fit: cover;
       border-radius: 8px;
     }
+=======
+h2 {
+  color: #000000;
+  margin-top: 0;
+}
 
-    .card-container {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      margin-top: 20px;
-      justify-content: center;
-    }
+footer {
+  text-align: center;
+  background: #eee;
+  padding: 1rem;
+  font-size: 0.9rem;
+  margin-top: 3rem;
+}
+>>>>>>> Stashed changes
 
-    .card {
-      width: 300px;
-      background-color: #ffda36;
-      padding: 1rem;
-      border-radius: 10px;
-      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-      text-align: center;
-      margin-bottom: 10px;
-      transition: transform 0.2s ease;
-    }
+.intro-img {
+  width: 100%;
+  height: 350px;
+  padding-top: 10px;
+  object-fit: cover;
+  border-radius: 8px;
+}
 
-    .card:hover {
-      transform: translateY(-5px);
-    }
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+  justify-content: center;
+}
 
+.card {
+  width: 300px;
+  background-color: #ffda36;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin-bottom: 10px;
+  transition: transform 0.2s ease;
+}
+
+<<<<<<< Updated upstream
     .h3_ {
       margin-top: 0;
       font-size: 25px;
       color: #000000;
     }
+=======
+.card:hover {
+  transform: translateY(-5px);
+}
+>>>>>>> Stashed changes
 
-    .card p {
-      font-size: 0.95rem;
-      margin: 0.5rem 0 0;
-    }
+.card h3 {
+  margin-top: 0;
+  font-size: 25px;
+  color: #000000;
+}
 
-    .card-img {
-      width: 100%;
-      height: 100px;
-      object-fit: cover;
-      border-radius: 8px;
-      margin-bottom: 0.7rem;
-    }
+.card p {
+  font-size: 0.95rem;
+  margin: 0.5rem 0 0;
+}
+
+.card-img {
+  width: 100%;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 0.7rem;
+}
 
 .impact-card-container {
   display: flex;
@@ -158,13 +200,18 @@
 .solution-card button:hover {
   background-color: #e6c000;
 }
+<<<<<<< Updated upstream
 
 h4{
     font-size: 50px;
+=======
+h4 {
+  font-size: 50px;
+>>>>>>> Stashed changes
 }
 
-.content-para{
-    text-align: justify;
+.content-para {
+  text-align: justify;
 }
 
 .image-header-container {
@@ -188,22 +235,21 @@ h4{
 }
 
 .go-to-top {
-    position: fixed;
-    bottom: 25px;
-    right: 25px;
-    background-color: #e67e22;
-    color: #fff;
-    padding: 10px 16px;
-    font-size: 16px;
-    font-weight: bold;
-    border-radius: 50px;
-    text-decoration: none;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-    z-index: 1000;
-    transition: background-color 0.3s ease;
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  background-color: #e67e22;
+  color: #fff;
+  padding: 10px 16px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 50px;
+  text-decoration: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  transition: background-color 0.3s ease;
 }
 
 .go-to-top:hover {
-    background-color: #ca6f1e;
+  background-color: #ca6f1e;
 }
-

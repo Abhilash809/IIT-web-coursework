@@ -100,7 +100,7 @@
         <div class="navbar">
             <div class="logo-title">
                 <img src="images/logo.png" alt="Zero Hunger Logo" class="logo" />
-                <h1>Zero Hunger Sri Lanka</h1>
+                <h1>SATHKARA.LK</h1>
             </div>
             <nav>
                 <ul class="nav-links">
@@ -131,6 +131,10 @@
     </header>
 
     <div class="table-wrapper">
+        <p style="text-align:right; font-size: 14px;">
+            Sort by: <a href="#">Region</a> | <a href="#">Malnutrition %</a> | <a href="#">Food Security</a>
+        </p>
+
         <table aria-label="Hunger statistics by region in Sri Lanka">
             <caption>
                 Hunger Impact by Region in Sri Lanka
@@ -145,108 +149,136 @@
                     <th class="tooltip" data-tooltip="Current food security level">
                         <img src="images/food-icon.png" class="thumb" alt="Food Security">
                     </th>
-                    <th class="tooltip" data-tooltip="Learn more about each region">
-                        🔗
-                    </th>
+                    <th class="tooltip" data-tooltip="Learn more about each region">🔗</th>
+                    <th class="tooltip" data-tooltip="Current support programs in place">Support</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
-                    <td colspan="5"><strong>Urban Regions</strong></td>
+                    <td colspan="6"><strong>Urban Regions</strong></td>
                 </tr>
                 <tr>
                     <td></td>
-                    <td>Colombo</td>
+                    <td class="tooltip" data-tooltip="Urban capital with rising living costs">
+                        Colombo <br>
+                        <small style="color:#777;">Urban capital with rising costs</small>
+                    </td>
                     <td>15% ⚠️</td>
                     <td><span class="icon">✓</span></td>
-                    <td><a href="facts.html" class="link-btn">Learn More</a></td>
+                    <td><a href="https://ijrar.org/papers/IJRARTH00269.pdf" class="link-btn">Learn More</a></td>
+                    <td>🆘 NGO Assistance</td>
                 </tr>
                 <tr>
                     <td></td>
-                    <td>Gampaha</td>
+                    <td class="tooltip" data-tooltip="Industrial area with mixed food access">
+                        Gampaha <br>
+                        <small style="color:#777;">Urban fringe with moderate access</small>
+                    </td>
                     <td>12%</td>
                     <td><span class="icon">✓</span></td>
-                    <td><a href="facts.html" class="link-btn">Learn More</a></td>
+                    <td><a href="https://ijrar.org/papers/IJRARTH00269.pdf" class="link-btn">Learn More</a></td>
+                    <td>✅ Govt. Support</td>
                 </tr>
+
                 <tr>
-                    <td colspan="5"><strong>Estate Regions</strong></td>
+                    <td colspan="6"><strong>Estate Regions</strong></td>
                 </tr>
                 <tr>
                     <td></td>
-                    <td>Nuwara Eliya</td>
+                    <td class="tooltip" data-tooltip="High-altitude plantations with poor access">
+                        Nuwara Eliya <br>
+                        <small style="color:#777;">Severe food insecurity zone</small>
+                    </td>
                     <td>51% ⚠️</td>
                     <td><span class="icon">✗</span></td>
-                    <td><a href="facts.html" class="link-btn">Learn More</a></td>
+                    <td><a href="https://ijrar.org/papers/IJRARTH00269.pdf" class="link-btn">Learn More</a></td>
+                    <td>❌ No Support</td>
                 </tr>
                 <tr>
                     <td></td>
-                    <td>Badulla</td>
+                    <td class="tooltip" data-tooltip="Plantation area with malnutrition concerns">
+                        Badulla <br>
+                        <small style="color:#777;">Underserved estate sector</small>
+                    </td>
                     <td>39%</td>
                     <td><span class="icon">✗</span></td>
-                    <td><a href="facts.html" class="link-btn">Learn More</a></td>
+                    <td><a href="https://ijrar.org/papers/IJRARTH00269.pdf" class="link-btn">Learn More</a></td>
+                    <td>🆘 NGO Assistance</td>
                 </tr>
+
                 <tr>
-                    <td colspan="5"><strong>Coastal Areas</strong></td>
+                    <td colspan="6"><strong>Coastal Areas</strong></td>
                 </tr>
                 <tr>
                     <td></td>
-                    <td>Trincomalee</td>
+                    <td class="tooltip" data-tooltip="Port city with economic instability">
+                        Trincomalee <br>
+                        <small style="color:#777;">Mixed food access conditions</small>
+                    </td>
                     <td>30%</td>
                     <td><span class="icon">⚠️</span></td>
-                    <td><a href="facts.html" class="link-btn">Learn More</a></td>
+                    <td><a href="https://ijrar.org/papers/IJRARTH00269.pdf" class="link-btn">Learn More</a></td>
+                    <td>✅ Govt. Support</td>
                 </tr>
                 <tr>
                     <td></td>
-                    <td>Jaffna</td>
+                    <td class="tooltip" data-tooltip="Northern tip with post-conflict vulnerability">
+                        Jaffna <br>
+                        <small style="color:#777;">Recovery zone with food risks</small>
+                    </td>
                     <td>27%</td>
                     <td><span class="icon">✓</span></td>
-                    <td><a href="facts.html" class="link-btn">Learn More</a></td>
+                    <td><a href="https://ijrar.org/papers/IJRARTH00269.pdf" class="link-btn">Learn More</a></td>
+                    <td>🆘 NGO Assistance</td>
                 </tr>
             </tbody>
         </table>
-    </div>
-    <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <title>Footer</title>
-  <link rel="stylesheet" href="footer.css" />
 
-</head>
-<body>
+        <p style="text-align:center; max-width:900px; margin:30px auto;">
+            <strong>Summary:</strong> Estate regions like Nuwara Eliya and Badulla show critical malnutrition rates with
+            little formal support. Urban areas like Colombo and Gampaha are relatively stable but face affordability
+            issues due to inflation. Coastal areas are mixed, with some communities still recovering from economic and
+            environmental pressures.
+        </p>
 
-  <footer>
-    <div class="footer-container">
-      <div class="footer-column">
-        <h3>Page Editors</h3>
-        <ul>
-          <li><a href="student1-editor.html">Student 1</a></li>
-          <li><a href="student2-editor.html">Student 2</a></li>
-          <li><a href="student3-editor.html">Student 3</a></li>
-          <li><a href="student4-editor.html">Student 4</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-column">
-        <h3>Validations</h3>
-        <ul>
-          <li><a href="validation1.html">Validation - S1</a></li>
-          <li><a href="validation2.html">Validation - S2</a></li>
-          <li><a href="validation3.html">Validation - S3</a></li>
-          <li><a href="validation4.html">Validation - S4</a></li>
-        </ul>
-      </div>
+        <div class="sources" style="text-align:center; margin-top: 40px;">
+            <h4>Data Sources:</h4>
+            <ul style="list-style: none; padding: 0;">
+                <li><a href="https://www.wfp.org/publications" target="_blank">WFP Sri Lanka Reports</a></li>
+                <li><a href="https://www.unicef.org/srilanka/" target="_blank">UNICEF Sri Lanka Nutrition Updates</a>
+                </li>
+            </ul>
+        </div>
     </div>
 
-    <div class="footer-bottom">
-      &copy; 2025 Sathkara.lk Team. All rights reserved.
-    </div>
-  </footer>
 
-</body>
-</html>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>Page Editors</h3>
+                <ul>
+                    <li><a href="student1-editor.html">Student 1</a></li>
+                    <li><a href="student2-editor.html">Student 2</a></li>
+                    <li><a href="student3-editor.html">Student 3</a></li>
+                    <li><a href="student4-editor.html">Student 4</a></li>
+                </ul>
+            </div>
 
+            <div class="footer-column">
+                <h3>Validations</h3>
+                <ul>
+                    <li><a href="validation1.html">Validation - S1</a></li>
+                    <li><a href="validation2.html">Validation - S2</a></li>
+                    <li><a href="validation3.html">Validation - S3</a></li>
+                    <li><a href="validation4.html">Validation - S4</a></li>
+                </ul>
+            </div>
+        </div>
 
+        <div class="footer-bottom">
+            &copy; 2025 Sathkara.lk Team. All rights reserved.
+        </div>
+    </footer>
 
 </body>
 

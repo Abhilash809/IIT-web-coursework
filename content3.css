@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 /* Color Variables */
 :root {
   --primary: #ffa500; /* Orange */
