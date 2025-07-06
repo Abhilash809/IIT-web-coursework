@@ -1,0 +1,271 @@
+<<<<<<< Updated upstream
+    .body_content {
+      font-family: Arial, sans-serif;
+      font-size: 20px;
+      background-color: #f9f9f9;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      color: #333;
+    }
+=======
+html {
+  scroll-behavior: smooth;
+}
+>>>>>>> Stashed changes
+
+body {
+  font-family: Arial, sans-serif;
+  font-size: 20px;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  color: #333;
+}
+
+header {
+  background-color: #ffd000;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 2rem 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.2rem;
+}
+
+<<<<<<< HEAD
+    section {
+      width: 90%;
+      max-width: 1800px;
+      margin-bottom: 2rem;
+      background-color: #fffbda;
+      padding: 2.2rem 3.5rem;
+      border-left: 8px solid #ffd000;
+      border-radius: 4px;
+      box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
+    }
+=======
+main {
+  padding: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+>>>>>>> 7b3eed2429a43626101ffefe0f0dc5586f6a6389
+
+section {
+  width: 90%;
+  max-width: 1800px;
+  margin-bottom: 2rem;
+  background-color: #fff8c2;
+  padding: 2.2rem 3.5rem;
+  border-left: 8px solid #ffd000;
+  border-radius: 4px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
+}
+
+<<<<<<< Updated upstream
+    .intro-img {
+      width: 100%;
+      height: 350px;
+      padding-top: 10px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+=======
+h2 {
+  color: #000000;
+  margin-top: 0;
+}
+
+footer {
+  text-align: center;
+  background: #eee;
+  padding: 1rem;
+  font-size: 0.9rem;
+  margin-top: 3rem;
+}
+>>>>>>> Stashed changes
+
+<<<<<<< HEAD
+    .card {
+      width: 300px;
+      background-color: #ffda36;
+      padding: 1rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+      text-align: center;
+      margin-bottom: 10px;
+      transition: transform 0.2s ease;
+    }
+=======
+.intro-img {
+  width: 100%;
+  height: 350px;
+  padding-top: 10px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+>>>>>>> 7b3eed2429a43626101ffefe0f0dc5586f6a6389
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+  justify-content: center;
+}
+
+.card {
+  width: 300px;
+  background-color: #ffda36;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin-bottom: 10px;
+  transition: transform 0.2s ease;
+}
+
+<<<<<<< Updated upstream
+    .h3_ {
+      margin-top: 0;
+      font-size: 25px;
+      color: #000000;
+    }
+=======
+.card:hover {
+  transform: translateY(-5px);
+}
+>>>>>>> Stashed changes
+
+.card h3 {
+  margin-top: 0;
+  font-size: 25px;
+  color: #000000;
+}
+
+.card p {
+  font-size: 0.95rem;
+  margin: 0.5rem 0 0;
+}
+
+.card-img {
+  width: 100%;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 0.7rem;
+}
+
+.impact-card-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.impact-card {
+  width: 1000px;
+  background-color: #ffda36;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.impact-card-img {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.solution-card-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.solution-card {
+  width: 1000px;
+  background-color: #ffda36;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+<<<<<<< HEAD
+=======
+.solution-card button {
+  margin-top: 10px;
+  padding: 20px 24px;
+  background-color: #ffae00;
+  border: none;
+  border-radius: 5px;
+  font-size: 25px;
+}
+
+.solution-card button:hover {
+  background-color: #e6c000;
+}
+<<<<<<< Updated upstream
+
+>>>>>>> 7b3eed2429a43626101ffefe0f0dc5586f6a6389
+h4{
+    font-size: 50px;
+=======
+h4 {
+  font-size: 50px;
+>>>>>>> Stashed changes
+}
+
+.content-para {
+  text-align: justify;
+}
+
+.image-header-container {
+  position: relative;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.image-heading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 20px 50px;
+  font-size: 42px;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.go-to-top {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  background-color: #e67e22;
+  color: #fff;
+  padding: 10px 16px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 50px;
+  text-decoration: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  transition: background-color 0.3s ease;
+}
+
+.go-to-top:hover {
+  background-color: #ca6f1e;
+}
