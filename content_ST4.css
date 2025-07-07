@@ -21,19 +21,7 @@ section {
   border-radius: 8px;
 }
 
-nav a {
-  display: inline-flex;
-  margin-right: 15px;
-  text-decoration: none;
-  color: #f79e20; 
-  font-weight: bold;
-}
-
-nav a:hover {
-  text-decoration: underline;
-}
-
-img {
+.img_content {
   max-width: 100%;
   height: auto;
   border-radius: 10px;
