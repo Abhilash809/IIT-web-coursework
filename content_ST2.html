@@ -1,320 +1,103 @@
-<!-- facts.html -->
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Facts About Hunger in Sri Lanka</title>
-  <link rel="stylesheet" href="global.css" />
-  <style>
-    body {
-      font-family: 'Roboto', sans-serif;
-      background-color: #fffdf4;
-      color: #2c3e50;
-      margin: 0;
-      padding: 0;
-    }
-
-    .hero-banner {
-      background-image: url('images/home_facts_hero1.png');
-      background-size: cover;
-      background-position: center;
-      height: 1000px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      color: white;
-      padding: 20px;
-    }
-
-    .container h1 {
-      font-size: 36px;
-      font-family: 'Poppins', sans-serif;
-      background-color: #f4d03f;
-      padding: 20px;
-      border-radius: 8px;
-    }
-
-    .container {
-      max-width: 1100px;
-      margin: auto;
-      padding: 60px 20px;
-    }
-
-    h1 {
-      text-align: center;
-      font-family: 'Poppins', sans-serif;
-      font-size: 32px;
-      margin-bottom: 40px;
-    }
-
-    .fact-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 30px;
-      margin-bottom: 60px;
-    }
-
-    .fact-card {
-      background-color: white;
-      border-radius: 12px;
-      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3), 0 6px 8px rgba(0, 0, 0, 0.15);
-      padding: 25px;
-      transition: transform 0.3s;
-    }
-
-    .fact-card:hover {
-      transform: translateY(-5px);
-    }
-
-    .fact-card h3 {
-      font-size: 20px;
-      margin-bottom: 10px;
-    }
-
-    .fact-card p {
-      font-size: 15px;
-      color: #444;
-    }
-
-    .fact-card a {
-      display: inline-block;
-      margin-top: 10px;
-      font-size: 14px;
-      color: #e67e22;
-      text-decoration: none;
-    }
-
-    .videos {
-      margin-bottom: 60px;
-    }
-
-    .videos iframe {
-      width: 100%;
-      height: 315px;
-      border: none;
-      border-radius: 12px;
-      margin-bottom: 30px;
-    }
-
-    .sources {
-      background-color: #f4f4f4;
-      padding: 30px;
-      border-radius: 12px;
-    }
-
-    .sources h2 {
-      font-size: 22px;
-      margin-bottom: 15px;
-    }
-
-    .sources ul {
-      padding-left: 20px;
-    }
-
-    .sources li a {
-      color: #e67e22;
-      text-decoration: none;
-    }
-
-    .cause-block {
-      background-color: #ffffff;
-      border-left: 5px solid #f39c12;
-      padding: 20px 30px;
-      margin-bottom: 30px;
-      border-radius: 10px;
-      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3), 0 6px 8px rgba(0, 0, 0, 0.15);
-      transition: transform 0.3s ease;
-    }
-
-    .cause-block:hover {
-      transform: translateY(-3px);
-    }
-
-    .cause-block h3 {
-      font-size: 22px;
-      color: #d35400;
-      margin-bottom: 10px;
-    }
-
-    .cause-block p {
-      font-size: 16px;
-      color: #2c3e50;
-      margin-bottom: 10px;
-    }
-
-    .source-link {
-      display: inline-block;
-      font-size: 14px;
-      color: #e67e22;
-      text-decoration: none;
-      font-weight: bold;
-      transition: color 0.2s ease;
-    }
-
-    .source-link:hover {
-      color: #ca6f1e;
-      text-decoration: underline;
-    }
-
-    .go-to-top {
-      position: fixed;
-      bottom: 25px;
-      right: 25px;
-      background-color: #e67e22;
-      color: #fff;
-      padding: 10px 16px;
-      font-size: 16px;
-      font-weight: bold;
-      border-radius: 50px;
-      text-decoration: none;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-      z-index: 1000;
-      transition: background-color 0.3s ease;
-    }
-
-    .go-to-top:hover {
-      background-color: #ca6f1e;
-    }
-  </style>
+  <link rel="stylesheet" href="global.css">
+  <link rel="stylesheet" href="content_ST2.css">
 </head>
 
 <body>
   <header>
     <div class="navbar">
       <div class="logo-title">
-        <img src="images/logo.png" alt="Zero Hunger Logo" class="logo" />
-        <h1>Zero Hunger Sri Lanka</h1>
+        <img src="images/logo.png" alt="Zero Hunger Logo" class="logo">
+        <h1>SATHKARA.LK</h1>
       </div>
       <nav>
         <ul class="nav-links">
-          <li>
-            <a href="homepage.html" class="active" title="Goes to home page">Home</a>
-          </li>
-          <li>
-            <a href="volunteer.html" title="Goes to Volunteer page">Volunteer</a>
-          </li>
+          <li><a href="home.html" class="active" title="Goes to home page">Home</a></li>
+          <li><a href="volunteer.html" title="Goes to Volunteer page">Volunteer</a></li>
           <li><a href="table.html" title="Goes to table page">Table</a></li>
-          <li>
-            <a href="feedback.html" title="Goes feedback page">Feedback</a>
-          </li>
-          <li>
-            <a href="profile.html" title="Goes to profile page">User Profile</a>
-          </li>
+          <li><a href="feedback.html" title="Goes feedback page">Feedback</a></li>
+          <li><a href="profile.html" title="Goes to profile page">User Profile</a></li>
           <li><a href="team.html" title="Goes to team page">Team</a></li>
-          <li>
-            <a href="sitemap.html" title="Goes to sitemap page">Sitemap</a>
-          </li>
+          <li><a href="sitemap.html" title="Goes to sitemap page">Sitemap</a></li>
         </ul>
       </nav>
     </div>
-
   </header>
-  <br>
-  <br>
-  <br>
-  <br>
-  <h1>Understanding Hunger in Sri Lanka</h1>
+
+  <br><br><br><br>
+
   <div class="container">
     <h1>Facts About Hunger in Sri Lanka</h1>
 
-    <!-- Fact Cards -->
     <div class="fact-grid">
       <div class="fact-card">
         <h3>Estate Sector Food Insecurity</h3>
-        <p>In 2023, 51% of estate sector households faced food insecurity. This region remains critically
-          vulnerable.</p>
-        <a
-          href="https://www.newsfirst.lk/2024/05/23/food-insecurity-high-in-sri-lanka-s-estate-sector-wfp#:~:text=COLOMBO%20(News%201st);%20The,of%20total%20expenditure%20on%20food.">Read
-          Source →</a>
+        <p>In 2023, 51% of estate sector households faced food insecurity. This region remains critically vulnerable.
+        </p>
+        <a href="https://www.newsfirst.lk/2024/05/23/food-insecurity-high-in-sri-lanka-s-estate-sector-wfp">Read Source
+          →</a>
       </div>
-
       <div class="fact-card">
         <h3>Nationwide Insecurity</h3>
-        <p>Moderate food insecurity rose to 24% in 2023, up from 17% earlier that year. Progress is unstable.
-        </p>
+        <p>Moderate food insecurity rose to 24% in 2023, up from 17% earlier that year. Progress is unstable.</p>
         <a href="https://www.wfp.org/publications/household-food-security-surveys-sri-lanka">Read Source →</a>
       </div>
-
       <div class="fact-card">
         <h3>Children in Crisis</h3>
-        <p>56,000 children in Sri Lanka suffer from severe malnutrition. One-third of families lack food
-          security.</p>
+        <p>56,000 children in Sri Lanka suffer from severe malnutrition. One-third of families lack food security.</p>
         <a
-          href="https://www.newsfirst.lk/2023/10/16/children-in-hunger-56-000-sri-lankan-children-face-severe-malnutrition-reveals-report#:~:text=home%20Home-,CHILDREN%20IN%20HUNGER:%2056%2C000%20Sri%20Lankan,face%20severe%20malnutrition%2C%20reveals%20report&text=COLOMBO%20(News%201st)%20%2D%20The,to%20a%20secure%20food%20source.">Read
+          href="https://www.newsfirst.lk/2023/10/16/children-in-hunger-56-000-sri-lankan-children-face-severe-malnutrition-reveals-report">Read
           Source →</a>
       </div>
-
       <div class="fact-card">
         <h3>Coping Strategies</h3>
         <p>42% of households are skipping meals or cutting portions to deal with food shortages.</p>
-        <a
-          href="https://www.wfp.org/countries/sri-lanka#:~:text=Over%20a%20quarter%20of%20the%20population%20is,eating%20less%2Dpreferred%20food%20or%20limiting%20portion%20sizes.">Read
-          Source →</a>
+        <a href="https://www.wfp.org/countries/sri-lanka">Read Source →</a>
       </div>
-
-
-
       <div class="fact-card">
         <h3>Food Spending Pressure</h3>
         <p>Many households spend over 62% of their income on food alone, leaving little for other needs.</p>
-        <a
-          href="https://www.newsfirst.lk/2024/05/23/food-insecurity-high-in-sri-lanka-s-estate-sector-wfp#:~:text=COLOMBO%20(News%201st);%20The,of%20total%20expenditure%20on%20food.">Read
-          Source →</a>
+        <a href="https://www.newsfirst.lk/2024/05/23/food-insecurity-high-in-sri-lanka-s-estate-sector-wfp">Read Source
+          →</a>
       </div>
     </div>
 
-    <!-- YouTube Video Section -->
     <div class="videos">
       <h2 style="margin-bottom: 20px;">Watch to Learn More</h2>
+
       <iframe width="560" height="315" src="https://www.youtube.com/embed/v1OvVzFuNOI" title="YouTube video player"
-        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowfullscreen>
       </iframe>
 
       <iframe width="560" height="315" src="https://www.youtube.com/embed/uzWOOdkXxzQ" title="YouTube video player"
-        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowfullscreen>
       </iframe>
-
-
-
     </div>
 
-    <!-- Sources -->
-
     <section id="causes" class="causes-section">
-      <h1>Main Causes of Hunger in Sri Lanka</h1>
+      <h2>Main Causes of Hunger in Sri Lanka</h2>
 
       <div class="cause-block">
         <h3>💸 Economic Crisis</h3>
-        <p>
-          Sri Lanka’s economic crisis has deeply impacted the country's ability to maintain food security. The
-          mounting foreign debt and a severe shortage of foreign reserves have made it extremely difficult to
-          import essential goods like food, fuel, and agricultural inputs. This has led to widespread
-          shortages
-          and a sharp increase in the cost of living, affecting even the most basic household needs. As a
-          result,
-          many families are unable to afford enough nutritious food to meet their daily requirements.
-        </p>
+        <p>Sri Lanka’s economic crisis has deeply impacted food security. Mounting foreign debt and reserve shortages
+          have limited essential imports like food and fuel. Families face inflated prices and can’t afford nutritious
+          meals.</p>
         <a href="https://www.globalcitizen.org/en/content/sri-lanka-economic-crisis-hunger/" class="source-link"
           target="_blank" rel="noopener">Read Source →</a>
       </div>
 
       <div class="cause-block">
         <h3>📈 Inflation & Devaluation</h3>
-        <p>
-          The rapid inflation in Sri Lanka has led to a dramatic rise in the prices of everyday food items. As
-          the
-          value of the Sri Lankan rupee continues to fall, the cost of imported goods — including essential
-          food
-          staples — has surged beyond the reach of many. Families now find it difficult to purchase even the
-          most
-          basic meals, forcing them to reduce meal sizes or skip meals altogether. This financial pressure is
-          especially severe for low-income and middle-class households already struggling with job losses and
-          rising utility costs.
+        <p>As the Sri Lankan rupee devalues, food costs rise dramatically. Many households now struggle to buy basic
+          necessities and are forced to skip meals. This situation is worse for low-income families with no safety net.
         </p>
         <a href="https://www.theguardian.com/global-development/2023/aug/15/no-milk-no-eggs-small-hope-fears-rise-for-sri-lankas-malnourished-children"
           class="source-link" target="_blank" rel="noopener">Read Source →</a>
@@ -322,100 +105,69 @@
 
       <div class="cause-block">
         <h3>🧪 Fertilizer Ban</h3>
-        <p>
-          In 2021, the Sri Lankan government implemented a sudden nationwide ban on chemical fertilizers
-          without
-          providing farmers with adequate alternatives or training. This decision severely disrupted
-          agricultural
-          practices, particularly in rice farming, which is a staple food in the country. As a result, crop
-          yields
-          declined sharply, leading to food shortages and increased reliance on expensive imports. The ban not
-          only weakened food production but also pushed many farmers into financial distress, deepening the
-          national hunger crisis.
-        </p>
+        <p>The 2021 fertilizer ban caused massive drops in crop yields. Farmers weren’t trained or supported with
+          alternatives, which disrupted rice and vegetable production — key to Sri Lanka’s food supply.</p>
         <a href="https://www.adb.org/multimedia/partnership-report2022/stories/urgent-response-to-a-food-crisis/"
           class="source-link" target="_blank" rel="noopener">Read Source →</a>
       </div>
 
       <div class="cause-block">
-        <h3>Conflict</h3>
-        <p>
-          Although Sri Lanka’s civil war officially ended in 2009, its long-lasting impact is still felt,
-          especially in the Northern and Eastern provinces. These regions suffer from underdeveloped
-          infrastructure, limited economic opportunities, and persistent poverty, making access to food and
-          basic
-          services a continuing challenge. Many displaced families and war-affected communities still struggle
-          to
-          rebuild stable livelihoods. As a result, food insecurity remains disproportionately high in these
-          post-conflict areas.
-
-
-        </p>
+        <h3>🕊️ Conflict</h3>
+        <p>Post-conflict regions like the North and East face limited economic growth and poor infrastructure. Many
+          families displaced by war are still rebuilding and struggle to secure regular meals.</p>
         <a href="https://www.thenewhumanitarian.org/analysis/2022/08/09/Sri-Lanka-food-crisis-hunger-aid"
           class="source-link" target="_blank" rel="noopener">Read Source →</a>
       </div>
 
       <div class="cause-block">
-        <h3>Agricultural Planning</h3>
-        <p>
-          Poor agricultural planning has significantly weakened Sri Lanka’s ability to produce enough food
-          locally. A lack of long-term strategies, inadequate support for farmers, and limited investment in
-          sustainable farming practices have left the agriculture sector vulnerable to shocks. Essential areas
-          such as irrigation, crop diversification, and access to modern technology have been neglected.
-          Without
-          proper planning, even small disruptions — like fertilizer shortages or climate events — can have a
-          severe impact on national food production.
-        </p>
+        <h3>🌾 Agricultural Planning</h3>
+        <p>Weak national planning and poor investment in farming have left Sri Lanka vulnerable. Without irrigation
+          systems, diversification, or climate adaptation, the country depends too much on imports.</p>
         <a href="https://www.researchgate.net/publication/277242572_Food_security_in_Sri_Lanka_-_Agronomic_implications_and_potentials"
           class="source-link" target="_blank" rel="noopener">Read Source →</a>
       </div>
-
-      <!-- Add more cause-blocks as needed -->
     </section>
 
     <div class="sources">
       <h2>Sources & References</h2>
       <ul>
-        <li><a href="https://www.wfp.org/publications/annual-country-reports-sri-lanka">World Food Programme Sri
-            Lanka Report</a></li>
-        <li><a
-            href="https://www.unicef.org/nutrition#:~:text=UNICEF%20runs%20nutrition%20programmes%20in,nutritious%2C%20affordable%20and%20sustainable%20diets.">UNICEF
-            on Child Nutrition</a></li>
+        <li><a href="https://www.wfp.org/publications/annual-country-reports-sri-lanka">World Food Programme Sri Lanka
+            Report</a></li>
+        <li><a href="https://www.unicef.org/nutrition">UNICEF on Child Nutrition</a></li>
         <li><a
             href="https://www.unicef.org/media/143836/file/Sri-Lanka-Humanitarian-SitRep-No.1-(Wirtschaftskrise),-Januar-bis-Juni-2023.pdf">Sri
             Lankan Hunger Stats - 2023 Update</a></li>
       </ul>
     </div>
   </div>
+
   <footer>
-       <div class="footer-container">
+    <div class="footer-container">
       <div class="footer-column">
         <h3>Page Editors</h3>
         <ul>
-          <li><a href="student1-editor.html">Student 1</a></li>
-          <li><a href="student2-editor.html">Student 2</a></li>
-          <li><a href="student3-editor.html">Student 3</a></li>
+          <li><a href="pageEditor_ST1.html">Student 1</a></li>
+          <li><a href="pageEditor_ST2.html">Student 2</a></li>
+          <li><a href="pageEditor_ST3.html">Student 3</a></li>
           <li><a href="student4-editor.html">Student 4</a></li>
         </ul>
       </div>
-
       <div class="footer-column">
         <h3>Validations</h3>
         <ul>
-          <li><a href="validation1.html">Validation - S1</a></li>
-          <li><a href="validation2.html">Validation - S2</a></li>
-          <li><a href="validation3.html">Validation - S3</a></li>
+          <li><a href="validation_ST1.html">Validation - S1</a></li>
+          <li><a href="validation_ST2.html">Validation - S2</a></li>
+          <li><a href="validation_ST3.html">Validation - S3</a></li>
           <li><a href="validation4.html">Validation - S4</a></li>
         </ul>
       </div>
     </div>
-
     <div class="footer-bottom">
       &copy; 2025 Sathkara.lk Team. All rights reserved.
     </div>
   </footer>
-  <a href="#" class="go-to-top" title="Go to top of page">⬆ Top</a>
 
+  <a href="#" class="go-to-top" title="Go to top of page">⬆ Top</a>
 </body>
 
 </html>

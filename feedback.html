@@ -1,156 +1,155 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Zero Hunger Sri Lanka</title>
-    <link rel="stylesheet" href="Global.css" />
-    <link rel="stylesheet" href="feedback.css" />
-  </head>
-  <body>
-    <header>
-      <div class="navbar">
-        <div class="logo-title">
-          <img src="images/logo.png" alt="Zero Hunger Logo" class="logo" />
-          <h1>Zero Hunger Sri Lanka</h1>
-        </div>
-        <nav>
-          <ul class="nav-links">
-            <li><a href="homepage.html" title="Goes to Home page">Home</a></li>
-            <li><a href="volunteer.html" title="Goes to Volunteer page">Volunteer</a></li>
-            <li><a href="table.html" title="Goes to table page">Table</a></li>
-            <li><a href="feedback.html" class="active" title="Goes feedback page">Feedback</a></li>
-            <li><a href="profile.html" title="Goes to profile page">User Profile</a></li>
-            <li><a href="team.html" title="Goes to team page">Team</a></li>
-            <li><a href="sitemap.html" title="Goes to sitemap page">Sitemap</a></li>
-          </ul>
-        </nav>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zero Hunger Sri Lanka</title>
+  <link rel="stylesheet" href="Global.css">
+  <link rel="stylesheet" href="feedback.css">
+</head>
+
+<body>
+  <header>
+    <div class="navbar">
+      <div class="logo-title">
+        <img src="images/logo.png" alt="Zero Hunger Logo" class="logo">
+        <h1>SATHKARA.LK</h1>
       </div>
-    </header>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="home.html" title="Goes to Home page">Home</a></li>
+          <li><a href="volunteer.html" title="Goes to Volunteer page">Volunteer</a></li>
+          <li><a href="table.html" title="Goes to table page">Table</a></li>
+          <li><a href="feedback.html" class="active" title="Goes feedback page">Feedback</a></li>
+          <li><a href="profile.html" title="Goes to profile page">User Profile</a></li>
+          <li><a href="team.html" title="Goes to team page">Team</a></li>
+          <li><a href="sitemap.html" title="Goes to sitemap page">Sitemap</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-    <video autoplay muted loop id="teamVideo" class="video-background">
-      <source src="background videos/feedback background.mkv" type="video/mp4">
-    </video>
+  <video autoplay muted loop id="teamVideo" class="video-background">
+    <source src="background_videos/feedback_background.mkv" type="video/mp4">
+  </video>
 
-    <main class="">
-      <br>
-      <br>
-      <br>
-      <br>
-      <div class="hero">
+  <main>
+    <br><br><br><br>
+
+    <div class="hero">
       <h2><u>Give Us Your Valuable Feedback to Help Fight Zero Hunger</u></h2>
-      </div>
-      <form action="index.php" method="post" enctype="multipart/form-data">
-        <fieldset>
-          <legend>Personal Details</legend>
+    </div>
 
-          <label for="Fullname">Full Name</label>
-          <input type="text" id="Fullname" name="fullname" maxlength="50" required title="Please enter your full name" aria-required="true" aria-label="Full Name" />
+    <form action="index.php" method="post" enctype="multipart/form-data">
+      <fieldset>
+        <legend>Personal Details</legend>
 
-          <label for="Email">Email</label>
-          <input type="email" id="Email" name="email" maxlength="100" placeholder="Abc@gmail.com" required title="Please enter your email" aria-required="true" aria-label="Email Address" />
+        <label for="Fullname">Full Name</label>
+        <input type="text" id="Fullname" name="fullname" maxlength="50" required title="Please enter your full name" aria-required="true" aria-label="Full Name">
 
-          <label for="Telephone">Telephone Number</label>
-          <input type="tel" id="Telephone" name="telephone" placeholder="123-1234567" pattern="[0-9]{3}-[0-9]{7}" maxlength="11" title="Format: 123-1234567" aria-label="Telephone Number" />
+        <label for="Email">Email</label>
+        <input type="email" id="Email" name="email" maxlength="100" placeholder="Abc@gmail.com" required title="Please enter your email" aria-required="true" aria-label="Email Address">
 
-          <label for="address">Address</label>
-          <input type="text" id="address" name="address" maxlength="100" aria-label="Home Address" />
-        </fieldset>
+        <label for="Telephone">Telephone Number</label>
+        <input type="tel" id="Telephone" name="telephone" placeholder="123-1234567" pattern="[0-9]{3}-[0-9]{7}" maxlength="11" title="Format: 123-1234567" aria-label="Telephone Number">
 
-        <fieldset>
-          <legend>Feedback & Preferences</legend>
+        <label for="address">Address</label>
+        <input type="text" id="address" name="address" maxlength="100" aria-label="Home Address">
+      </fieldset>
 
-          <label for="comment">Comment or Message</label>
-          <textarea id="comment" name="comment" rows="3" cols="25" maxlength="300" placeholder="Enter your message here..." aria-label="Comment or Message"></textarea>
+      <fieldset>
+        <legend>Feedback & Preferences</legend>
 
-          <label for="Date">Date and Time of Feedback</label>
-          <input type="datetime-local" id="Date" name="feedbackDate" value="2025-06-19T10:00" aria-label="Feedback Date and Time" />
+        <label for="comment">Comment or Message</label>
+        <textarea id="comment" name="comment" rows="3" cols="25" maxlength="300" placeholder="Enter your message here..." aria-label="Comment or Message"></textarea>
 
-          <label>Your Role in Fighting Hunger?</label>
-          <div class="radio-group">
-            <label class="radio-option"><input type="radio" name="q3" value="Volunteer" aria-label="Volunteer" /> Volunteer</label>
-            <label class="radio-option"><input type="radio" name="q3" value="Donor" aria-label="Donor" /> Donor</label>
-            <label class="radio-option"><input type="radio" name="q3" value="Beneficiary" aria-label="Beneficiary" /> Beneficiary (food recipient)</label>
-            <label class="radio-option"><input type="radio" name="q3" value="Researcher" aria-label="Researcher" /> Researcher</label>
-          </div>
+        <label for="Date">Date and Time of Feedback</label>
+        <input type="datetime-local" id="Date" name="feedbackDate" value="2025-06-19T10:00" aria-label="Feedback Date and Time">
 
-          <label>Was this your first time visiting?</label>
-          <div class="radio-group">
-            <input type="radio" id="q1yes" name="q1" value="Yes" aria-label="First Visit Yes" />
-            <label for="q1yes">Yes</label>
-
-            <input type="radio" id="q1no" name="q1" value="No" aria-label="First Visit No" />
-            <label for="q1no">No</label>
-          </div>
-
-          <label for="hear-about">How did you hear about us?</label>
-          <select id="hear-about" name="hear_about" required title="Please select an option" aria-required="true" aria-label="How you heard about us">
-            <option value="" disabled selected>Select an option...</option>
-            <option value="social-media">Social Media</option>
-            <option value="food-bank">Food Bank Referral</option>
-            <option value="volunteer">Volunteer Program</option>
-            <option value="other">Other</option>
-          </select>
-
-          <label for="issue">What issues matter most?</label>
-          <select id="issue" name="issue" required title="Please select the issue that matters to you" aria-required="true" aria-label="Important Issues">
-            <option value="" disabled selected>Select an option...</option>
-            <option value="food-waste-reduction">Food waste reduction</option>
-            <option value="School-meal">School meal programs</option>
-            <option value="local-food">Local food bank support</option>
-            <option value="Agricultural-sustainability">Agricultural sustainability</option>
-          </select>
-
-          <label>Would you recommend our service?</label>
-          <div class="radio-group">
-            <input type="radio" id="q2yes" name="q2" value="Yes" aria-label="Recommend Yes" />
-            <label for="q2yes">Yes</label>
-
-            <input type="radio" id="q2no" name="q2" value="No" aria-label="Recommend No" />
-            <label for="q2no">No</label>
-          </div>
-
-          <label>Rate our service:</label>
-          <div class="star-rating">
-            <input type="radio" id="star5" name="rating" value="5" />
-            <label for="star5" title="5 stars">★</label>
-  
-            <input type="radio" id="star4" name="rating" value="4" />
-            <label for="star4" title="4 stars">★</label>
-  
-            <input type="radio" id="star3" name="rating" value="3" />
-            <label for="star3" title="3 stars">★</label>
-  
-            <input type="radio" id="star2" name="rating" value="2" />
-            <label for="star2" title="2 stars">★</label>
-  
-            <input type="radio" id="star1" name="rating" value="1" />
-            <label for="star1" title="1 star">★</label>
-          </div>
-  
-
-          <label for="evidence">Upload evidence of your experience (photos of food donations, volunteering, or food waste):</label>
-          <input type="file" id="evidence" name="user_evidence" accept="image/*,.pdf" aria-label="Upload Evidence" />
-        </fieldset>
-
-        <br />
-        
-        <div class="button-group">
-          <input type="reset" value="Reset" />
-          <input type="submit" value="Submit" />
+        <label>Your Role in Fighting Hunger?</label>
+        <div class="radio-group">
+          <label class="radio-option"><input type="radio" name="q3" value="Volunteer" aria-label="Volunteer"> Volunteer</label>
+          <label class="radio-option"><input type="radio" name="q3" value="Donor" aria-label="Donor"> Donor</label>
+          <label class="radio-option"><input type="radio" name="q3" value="Beneficiary" aria-label="Beneficiary"> Beneficiary (food recipient)</label>
+          <label class="radio-option"><input type="radio" name="q3" value="Researcher" aria-label="Researcher"> Researcher</label>
         </div>
-        
-      </form>
-    </main>
 
-    <footer>
-         <div class="footer-container">
+        <label>Was this your first time visiting?</label>
+        <div class="radio-group">
+          <input type="radio" id="q1yes" name="q1" value="Yes" aria-label="First Visit Yes">
+          <label for="q1yes">Yes</label>
+
+          <input type="radio" id="q1no" name="q1" value="No" aria-label="First Visit No">
+          <label for="q1no">No</label>
+        </div>
+
+        <label for="hear-about">How did you hear about us?</label>
+        <select id="hear-about" name="hear_about" required title="Please select an option" aria-required="true" aria-label="How you heard about us">
+          <option value="" disabled selected>Select an option...</option>
+          <option value="social-media">Social Media</option>
+          <option value="food-bank">Food Bank Referral</option>
+          <option value="volunteer">Volunteer Program</option>
+          <option value="other">Other</option>
+        </select>
+
+        <label for="issue">What issues matter most?</label>
+        <select id="issue" name="issue" required title="Please select the issue that matters to you" aria-required="true" aria-label="Important Issues">
+          <option value="" disabled selected>Select an option...</option>
+          <option value="food-waste-reduction">Food waste reduction</option>
+          <option value="School-meal">School meal programs</option>
+          <option value="local-food">Local food bank support</option>
+          <option value="Agricultural-sustainability">Agricultural sustainability</option>
+        </select>
+
+        <label>Would you recommend our service?</label>
+        <div class="radio-group">
+          <input type="radio" id="q2yes" name="q2" value="Yes" aria-label="Recommend Yes">
+          <label for="q2yes">Yes</label>
+
+          <input type="radio" id="q2no" name="q2" value="No" aria-label="Recommend No">
+          <label for="q2no">No</label>
+        </div>
+
+        <label>Rate our service:</label>
+        <div class="star-rating">
+          <input type="radio" id="star5" name="rating" value="5">
+          <label for="star5" title="5 stars">★</label>
+
+          <input type="radio" id="star4" name="rating" value="4">
+          <label for="star4" title="4 stars">★</label>
+
+          <input type="radio" id="star3" name="rating" value="3">
+          <label for="star3" title="3 stars">★</label>
+
+          <input type="radio" id="star2" name="rating" value="2">
+          <label for="star2" title="2 stars">★</label>
+
+          <input type="radio" id="star1" name="rating" value="1">
+          <label for="star1" title="1 star">★</label>
+        </div>
+
+        <label for="evidence">Upload evidence of your experience (photos of food donations, volunteering, or food waste):</label>
+        <input type="file" id="evidence" name="user_evidence" accept="image/*,.pdf" aria-label="Upload Evidence">
+      </fieldset>
+
+      <br>
+
+      <div class="button-group">
+        <input type="reset" value="Reset">
+        <input type="submit" value="Submit">
+      </div>
+    </form>
+  </main>
+
+  <footer>
+    <div class="footer-container">
       <div class="footer-column">
         <h3>Page Editors</h3>
         <ul>
-          <li><a href="student1-editor.html">Student 1</a></li>
-          <li><a href="student2-editor.html">Student 2</a></li>
-          <li><a href="student3-editor.html">Student 3</a></li>
+          <li><a href="pageEditor_ST1.html">Student 1</a></li>
+          <li><a href="pageEditor_ST2.html">Student 2</a></li>
+          <li><a href="pageEditor_ST3.html">Student 3</a></li>
           <li><a href="student4-editor.html">Student 4</a></li>
         </ul>
       </div>
@@ -158,9 +157,9 @@
       <div class="footer-column">
         <h3>Validations</h3>
         <ul>
-          <li><a href="validation1.html">Validation - S1</a></li>
-          <li><a href="validation2.html">Validation - S2</a></li>
-          <li><a href="validation3.html">Validation - S3</a></li>
+          <li><a href="validation_ST1.html">Validation - S1</a></li>
+          <li><a href="validation_ST2.html">Validation - S2</a></li>
+          <li><a href="validation_ST3.html">Validation - S3</a></li>
           <li><a href="validation4.html">Validation - S4</a></li>
         </ul>
       </div>
@@ -169,6 +168,7 @@
     <div class="footer-bottom">
       &copy; 2025 Sathkara.lk Team. All rights reserved.
     </div>
-    </footer>
-  </body>
+  </footer>
+</body>
+
 </html>
