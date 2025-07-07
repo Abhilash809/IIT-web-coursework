@@ -2,10 +2,10 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="Global.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Editors Page - K.P.S Dahanayake</title>
+    <link rel="stylesheet" href="Global.css">
     <style>
         * {
             box-sizing: border-box;
@@ -33,11 +33,12 @@
             color: #d35400;
         }
 
-        #editor-h3 {
+        .highlight {
             background-color: #f4d03f;
             border-radius: 12px;
             font-size: larger;
             text-align: center;
+            padding: 10px;
         }
 
         a {
@@ -56,7 +57,6 @@
             padding: 25px;
             margin-bottom: 40px;
             box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3), 0 6px 8px rgba(0, 0, 0, 0.15);
-            line-height: 200%;
         }
 
         ul {
@@ -76,11 +76,6 @@
             font-family: monospace;
         }
 
-        footer {
-            width: 100vw;
-            margin-left: calc(-50vw + 50%);
-        }
-
         .go-to-top {
             position: fixed;
             bottom: 25px;
@@ -94,21 +89,10 @@
             text-decoration: none;
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
             z-index: 1000;
-            transition: background-color 0.3s ease;
         }
 
         .go-to-top:hover {
             background-color: #ca6f1e;
-        }
-
-        .video-background {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            z-index: -1;
-            object-fit: cover;
         }
     </style>
 </head>
@@ -117,232 +101,95 @@
     <header>
         <div class="navbar">
             <div class="logo-title">
-                <img src="images/logo.png" alt="Zero Hunger Logo" class="logo" />
+                <img src="images/logo.png" alt="Zero Hunger Logo" class="logo">
                 <h1>SATHKARA.LK</h1>
             </div>
             <nav>
                 <ul class="nav-links">
-                    <li><a href="home.html" class="active" title="Goes to home page"><i class="fa-solid fa-house"></i>
-                            Home</a></li>
-                    <li><a href="volunteer.html" title="Goes to Volunteer page">Volunteer</a></li>
-                    <li><a href="table.html" title="Goes to table page">Table</a></li>
-                    <li><a href="feedback.html" title="Goes feedback page">Feedback</a></li>
-                    <li><a href="profile.html" title="Goes to profile page">User Profile</a></li>
-                    <li><a href="team.html" title="Goes to team page">Team</a></li>
-                    <li><a href="sitemap.html" title="Goes to sitemap page">Sitemap</a></li>
+                    <li><a href="home.html" title="Goes to home page">Home</a></li>
+                    <li><a href="volunteer.html">Volunteer</a></li>
+                    <li><a href="table.html">Table</a></li>
+                    <li><a href="feedback.html">Feedback</a></li>
+                    <li><a href="profile.html">User Profile</a></li>
+                    <li><a href="team.html">Team</a></li>
+                    <li><a href="sitemap.html">Sitemap</a></li>
                 </ul>
             </nav>
         </div>
     </header>
-    <video autoplay muted loop id="teamVideo" class="video-background">
-        <source src="background_videos/feedback_background.mkv" type="video/mp4">
-    </video>
-    <br><br>
 
-    <h1>Editor's page: K.P.S Dahanayake</h1>
+    <h1>Editor's Page: K.P.S Dahanayake</h1>
 
     <div class="section">
-        <h2> My Role and Completed Tasks</h2>
+        <h2>My Role and Completed Tasks</h2>
         <p><strong>Role:</strong> As Student 2, I was responsible for designing and implementing the following core
-            components of our group website:</p>
+            pages:</p>
         <ul>
-            <li>Home Page (home.html)</li>
-            <li>Global CSS Template (global.css)</li>
-            <li>Table Page (table.html)</li>
-            <li>Content Page: Causes & Facts (content_ST2.html)</li>
+            <li>Home Page</li>
+            <li>Global CSS</li>
+            <li>Table Page</li>
+            <li>Content Page</li>
         </ul>
     </div>
 
     <div class="section">
-        <h2> Technical Descriptions</h2>
-        <h3 id="editor-h3"> Home Page</h3>
-        <p>
-            <li>The home page sets the foundation for the user’s experience across the site. I used a clean, responsive
-                layout built with semantic HTML5 elements such as &lt;header&gt;, &lt;nav&gt;, and &lt;main&gt; to
-                ensure
-                accessibility and structure. The navigation bar was created using a &lt;ul&gt; and styled with display:
-                flex
-                to align links horizontally across the top of the page.</li>
-            <br>
-            <li>I applied a global CSS template to enforce consistency across the entire website. For example, I used
-                the
-                Google Fonts Poppins and Roboto for headings and paragraph text respectively, to create a modern,
-                legible
-                appearance. Hover effects were added using the :hover pseudo-class on links (a:hover) to give
-                interactive
-                feedback when users move their cursor over the navigation menu.</li>
-            <br>
-            <li>The logo and site title are aligned using flexbox, and spacing is managed using margin and padding
-                utilities. To ensure responsiveness on different screen sizes, I used max-width and media queries in the
-                CSS
-                file.</li>
-        </p>
-        <br>
-        <h4>Key Tags & Properties</h4>
-        <ol>
-            <li>
-                HTML: &lt;header&gt;, &lt;nav&gt;, &lt;ul&gt;, &lt;li&gt;, &lt;img&gt;, &lt;a&gt;, &lt;main&gt;
-            </li>
-            <li>CSS: display: flex, gap, :hover, text-align, font-family, media queries</li>
-        </ol>
-        <a href="home.html" class="page-link" target="_blank">View Home Page</a><br>
-        <a href="validation_ST2.html#home-validation" target="_blank">Validation: Home Page</a>
-        <br>
-        <h3 id="editor-h3"> Table Page</h3>
-        <p>
-            <li>The table page is one of the most interactive parts of the site and displays a region-wise comparison of
-                hunger impacts across Sri Lanka. I structured the data using the &lt;table&gt; element with headers in
-                &lt;thead&gt;, and grouped data rows under &lt;tbody&gt;. To create a visually organized structure, I
-                used
-                rowspan and colspan to merge header cells and separate regions (Urban, Estate, Coastal) under unified
-                rows.</li>
-            <br>
-            <li>Thumbnails were embedded within the table header using &lt;img&gt; tags. These icons were wrapped in
-                &lt;th&gt; elements and enhanced with a tooltip feature using CSS only — this was achieved using a
-                custom
-                data-tooltip attribute and ::after pseudo-element styling on hover.</li>
-            <br>
-            <li>To improve readability, I styled alternating rows with tr:nth-child(even) for zebra striping. A
-                box-shadow
-                was applied to the entire table wrapper for a modern, elevated look. Hover effects (tr:hover) give
-                visual
-                feedback and bolden the row, while icons such as ✓ and ⚠️ were added inside &lt;td&gt; elements to show
-                food
-                security visually.</li>
-            <br>
-            <li>I also included clickable links within each row using anchor tags &lt;a&gt; with
-                target=&quot;_blank&quot;
-                to open full reports (like the IJRAR PDF) in a new tab. One of the cells uses colspan=&quot;5&quot; to
-                span
-                a row across the entire table for grouping.</li>
-        </p>
-        <br>
-        <h4>Key Tags & Properties</h4>
-        <ol>
-            <li>
-                HTML: &lt;table&gt;, &lt;thead&gt;, &lt;tbody&gt;, &lt;th&gt;, &lt;td&gt;, &lt;img&gt;, rowspan, colspan
-            </li>
-            <li>
-                CSS: nth-child(even), :hover, box-shadow, border, padding, position: relative, ::after (for tooltips)
-            </li>
-        </ol>
-        <a href="table.html" class="page-link" target="_blank">View Table Page</a><br />
-        <a href="validation_ST2.html#table-validation" target="_blank">Validation: Table Page</a>
-        <br>
-        <h3 id="editor-h3"> Content Page</h3>
-        <p>
-            <li>This page presents the “Causes and Facts of Hunger in Sri Lanka.” I used a multi-section layout with
-                internal linking to allow users to jump between facts, causes, videos, and sources. Headings
-                (&lt;h2&gt;,
-                &lt;h3&gt;) were logically organized and wrapped in &lt;section&gt; elements with id attributes to
-                enable
-                anchor navigation.</li>
-            <br>
-            <li>The facts section was implemented using a responsive CSS grid (display: grid) with
-                grid-template-columns:
-                repeat(auto-fit, minmax(300px, 1fr)) to ensure it adapts to any screen width. Each fact was presented
-                inside
-                a div styled as a card using box-shadow, border-radius, and hover animations (transform:
-                translateY(-5px)),
-                creating an engaging experience.</li>
-            <br>
-            <li>For the causes section, I designed a different layout to distinguish it visually. I used vertically
-                stacked
-                “info blocks” with section titles, emojis, and paragraph explanations. This helped maintain contrast
-                between
-                visual layouts and improved scannability.</li>
-            <br>
-            <li>To meet accessibility and interactivity requirements, I added:</li>
-        <ol>
-            <li>A fixed “Go to Top” button (position: fixed) styled with a circular background and smooth hover
-                transitions</li>
+        <h2>Technical Descriptions</h2>
 
-            <li>YouTube videos embedded using &lt;iframe&gt; with responsive styling</li>
-
-            <li>All images included alt text and were styled with border-radius, margin, and width: 100% to keep them
-                responsive</li>
-        </ol>
-        </p>
-        <br>
-        <h4>Key Tags & Properties</h4>
-        <ol>
-            <li>
-                HTML: &lt;section&gt;, &lt;h2&gt;, &lt;h3&gt;, &lt;a&gt;, &lt;iframe&gt;, &lt;img&gt;, &lt;div
-
-                id=&quot;causes&quot;&gt;
-            </li>
-            <li>CSS: display: grid, gap, box-shadow, border-radius, position: fixed, scroll-behavior: smooth, transform,
-                :hover
-            </li>
-        </ol>
-        <a href="content_ST2.html" class="page-link" target="_blank">View Content Page</a><br />
-        <a href="validation_ST2.html#content-validation" target="_blank">Validation: Content Page</a>
-    </div>
-
-    <div class="section">
-        <h2> Challenges and Lessons Learned</h2>
-        <p>
-            <li>One of the main challenges I faced was merging table headers using <span
-                    class="code-term">rowspan</span>
-                while keeping the table visually balanced on mobile screens. I resolved this by adjusting column widths
-                and
-                padding. Another challenge was ensuring that internal links on the content page scrolled to the correct
-                position across different browsers — I fixed this by testing anchor IDs and using <span
-                    class="code-term">scroll-behavior: smooth</span> in CSS.</li>
-            <br>
-        </p>
-        <p>
-            <li>From these experiences, I learned how to structure semantic, accessible pages and how to make styling
-                decisions that balance readability with aesthetic value.</li>
-        </p>
-    </div>
-
-    <div class="section">
-        <h2> Accessibility</h2>
-        <p>
-            All pages use semantic HTML tags like <span class="code-term">&lt;header&gt;</span>, <span
-                class="code-term">&lt;nav&gt;</span>, <span class="code-term">&lt;footer&gt;</span>, and <span
-                class="code-term">&lt;section&gt;</span>. Images include meaningful <span class="code-term">alt</span>
-            text, and interactive elements like buttons and links use descriptive <span class="code-term">title</span>
-            attributes. The "Go to Top" button is always visible and keyboard-navigable. Color contrast was checked to
-            support readability.
-        </p>
-    </div>
-
-    <div class="section">
-        <h2> Compliance</h2>
-        <p>
-            All my pages follow best practices aligned with Janet web publishing guidelines. I used valid, semantic HTML
-            structure and avoided deprecated tags. CSS is separated where appropriate, and inline styles are minimal.
-            External PDFs are opened in new tabs, and file naming conventions follow web-safe characters and lowercase
-            patterns.
-        </p>
-    </div>
-
-    <div class="section">
-        <h2> References</h2>
+        <h3 id="editor-home" class="highlight">Home Page</h3>
         <ul>
-            <li><a href="https://www.wfp.org/publications/household-food-security-surveys-sri-lanka"
-                    target="_blank">Household Food Security Surveys – Sri Lanka</a></li>
-            <li><a href="https://www.w3schools.com/" target="_blank">W3Schools: HTML & CSS Tutorials</a></li>
-            <li>Lecture Notes: Weeks 1–5 (IIT Blackboard)</li>
-            <li>IJRAR Research Paper – <a href="docs/IJRARTH00269.pdf" target="_blank">View PDF</a></li>
-            <li>HTML and CSS Basics - <a href="https://youtu.be/HGTJBPNC-Gw?si=Lr0ZoCOFrq-MIVUv" target="_blank">Watch
-                    the video</a>
+            <li>Clean layout using semantic tags and flexbox for header/navigation.</li>
+            <li>Google Fonts applied for improved readability.</li>
+            <li>Responsiveness ensured via max-widths and media queries.</li>
+        </ul>
+        <a href="home.html" class="page-link" target="_blank">View Home Page</a><br>
+        <a href="validation_ST2.html#home-validation" class="page-link" target="_blank">Validation: Home Page</a>
+
+        <h3 id="editor-table" class="highlight">Table Page</h3>
+        <ul>
+            <li>Used <code>&lt;table&gt;</code> elements with <code>thead</code> and <code>tbody</code> for structure.
             </li>
-            <li>World Food Programme Sri
-                Lanka Report - <a href="https://www.wfp.org/publications/annual-country-reports-sri-lanka"
-                    target="_blank">Read the report</a></li>
-            <li>Learn About Child Nutrition - <a
-                    href="https://www.unicef.org/nutrition#:~:text=UNICEF%20runs%20nutrition%20programmes%20in,nutritious%2C%20affordable%20and%20sustainable%20diets."
-                    target="_blank">UNICEF on Child Nutrition-Report</a></li>
-            <li>UNICEF
-                on Child Nutrition - <a
-                    href="https://www.unicef.org/media/143836/file/Sri-Lanka-Humanitarian-SitRep-No.1-(Wirtschaftskrise),-Januar-bis-Juni-2023.pdf"
-                    target="_blank">Sri
-                    Lankan Hunger Stats - 2023 Update</a></li>
-            <li>Creating a Navigation Bar - <a href="https://youtu.be/f3uCSh6LIY0?si=3cJqVkZDa_sAasj3"
-                    target="_blank">Watch the video</a></li>
+            <li>Used tooltips with icons, merged rows with <code>rowspan</code>, styled hover states.</li>
+        </ul>
+        <a href="table.html" class="page-link" target="_blank">View Table Page</a><br>
+        <a href="validation_ST2.html#table-validation" class="page-link" target="_blank">Validation: Table Page</a>
+
+        <h3 id="editor-content" class="highlight">Content Page</h3>
+        <ul>
+            <li>Multi-section layout for facts, causes, and sources.</li>
+            <li>Used CSS grid for responsiveness and <code>iframe</code> to embed videos.</li>
+            <li>Each fact is a styled card with hover effects.</li>
+        </ul>
+        <a href="content_ST2.html" class="page-link" target="_blank">View Content Page</a><br>
+        <a href="validation_ST2.html#content-validation" class="page-link" target="_blank">Validation: Content Page</a>
+    </div>
+
+    <div class="section">
+        <h2>Challenges & Lessons Learned</h2>
+        <ul>
+            <li>Working with <code>rowspan</code> and <code>colspan</code> for mobile table layouts was challenging.
+            </li>
+            <li>Ensuring consistent internal linking using anchor tags and scroll behavior across browsers was a
+                learning experience.</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Accessibility</h2>
+        <p>Used semantic HTML, alt text for all images, descriptive titles for links, and ensured keyboard-navigable
+            elements.</p>
+    </div>
+
+    <div class="section">
+        <h2>Compliance</h2>
+        <p>All pages follow valid HTML5, CSS3, and Janet web standards. File names use lowercase and avoid spaces.</p>
+    </div>
+
+    <div class="section">
+        <h2>References</h2>
+        <ul>
+            <li><a href="https://www.w3schools.com/" target="_blank">W3Schools</a></li>
+            <li><a href="https://www.wfp.org/publications" target="_blank">WFP Reports</a></li>
+            <li><a href="https://www.unicef.org/srilanka/" target="_blank">UNICEF Sri Lanka</a></li>
         </ul>
     </div>
 
@@ -368,11 +215,11 @@
                 </ul>
             </div>
         </div>
-
         <div class="footer-bottom">
             &copy; 2025 Sathkara.lk Team. All rights reserved.
         </div>
     </footer>
+
     <a href="#" class="go-to-top" title="Go to top of page">⬆ Top</a>
 </body>
 
