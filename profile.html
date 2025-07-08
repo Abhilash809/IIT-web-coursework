@@ -1,393 +1,290 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
-    <title>Zero Hunger Sri Lanka</title>
-  </head>
-  <body>
-    <header>
-      <link rel="stylesheet" href="Global.css" />
-      <link rel="stylesheet" href="profile.css" />
-      <link rel="stylesheet" href="header.css" />
-      <div class="navbar">
-        <div class="logo-title">
-          <img src="images/logo.png" alt="Zero Hunger Logo" class="logo" />
-          <h1>Zero Hunger Sri Lanka</h1>
-        </div>
-        <nav>
-          <ul class="nav-links">
-            <li><a href="homepage.html" title="Goes to home page">Home</a></li>
-            <li>
-              <a href="volunteer.html" title="Goes to Volunteer page"
-                >Volunteer</a
-              >
-            </li>
-            <li><a href="table.html" title="Goes to table page">Table</a></li>
-            <li>
-              <a href="feedback.html" title="Goes feedback page">Feedback</a>
-            </li>
-            <li>
-              <a href="profile.html" class="active" title="Goes to profile page"
-                >User Profile</a
-              >
-            </li>
-            <li><a href="team.html" title="Goes to team page">Team</a></li>
-            <li>
-              <a href="sitemap.html" title="Goes to sitemap page">Sitemap</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </header>
-    <main class="wrapper">
-      <div class="profile-main-container">
-        <div class="profile-container">
-          <form class="profile-form" action="#" method="post">
-            <!-- Profile Header Section -->
-            <div class="profile-section profile-header-section">
-              <div class="profile-header">
-                <div class="profile-picture-container">
-                  <div class="picture-wrapper">
-                    <img src="images/ST_4.jpg" alt="Profile Picture" class="profile-picture" />
-                    <label for="profile-pic-upload" class="upload-label">
-                      <i class="upload-icon">📷</i>
-                    </label>
-                    <input type="file" id="profile-pic-upload" name="profile_picture" accept="image/*" />
-                  </div>
-                </div>
-                <div class="profile-text">
-                  <div class="form-group">
-                    <label for="name">Full Name:</label>
-                    <input
-                      type="text"
-                      id="name"
-                      name="name"
-                      value="Sandaru Pasan" readonly
-                      required
-                    />
-                  </div>
-                  <div class="form-group">
-                    <label for="quote">Personal Quote:</label>
-                    <input
-                      type="text"
-                      id="quote"
-                      name="quote"
-                      placeholder="A quotation that captures your personality"
-                    />
-                  </div>
-    
-                  <div class="info-row">
-                    <div class="form-group info-item">
-                      <label for="age">Age:</label>
-                      <input
-                        type="number"
-                        id="age"
-                        name="age"
-                        value="21" readonly
-                        class="info-input"
-                      />
-                    </div>
-    
-                    <div class="form-group info-item">
-                      <label for="work">Work:</label>
-                      <input
-                        type="text"
-                        id="work"
-                        name="work"
-                        value="Student" readonly
-                        class="info-input"
-                      />
-                    </div>
-    
-                    <div class="form-group info-item family-item">
-                      <label>Family Status:</label>
-                      <div class="radio-group">
-                        <input
-                          type="radio"
-                          id="single"
-                          name="family"
-                          value="Single" checked
-                        />
-                        <label for="single">Single</label>
-                        <input
-                          type="radio"
-                          id="married"
-                          name="family"
-                          value="Married"
-                        />
-                        <label for="married">Married</label>
-                      </div>
-                    </div>
-    
-                    <div class="form-group info-item">
-                      <label for="location">Location:</label>
-                      <input
-                        type="text"
-                        id="location"
-                        name="location"
-                        value="Sri Lanka" readonly
-                        class="info-input"
-                      />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-    
-            <div class="section-divider"></div>
-    
-            <!-- Goals Section -->
-            <div class="profile-section goal-section">
-              <div class="goal-form">
-                <h2><span class="section-icon">🎯</span>Our Goals</h2>
-                <div class="goal-row">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zero Hunger Sri Lanka</title>
+</head>
 
-                  <!-- Goal 1 -->
-                  <div class="goal-card">
-                    <img src="images/goal.png" alt="Goal 1 Image" />
-                    <label for="goal1">Goal 1</label>
-                    <input type="text" 
-                      id="goal1" 
-                      name="goal1"
-                      value="End Hunger" readonly
-                    />
-                  </div>
-    
-                  <!-- Goal 2 -->
-                  <div class="goal-card">
-                    <img src="images/goal.png" alt="Goal 2 Image" />
-                    <label for="goal2">Goal 2</label>
-                    <input
-                      type="text"
-                      id="goal2"
-                      name="goal2"
-                      value="Improve Nutrition" readonly
-                    />
-                  </div>
-    
-                  <!-- Goal 3 -->
-                  <div class="goal-card">
-                    <img src="images/goal.png" alt="Goal 3 Image" />
-                    <label for="goal3">Goal 3</label>
-                    <input
-                      type="text"
-                      id="goal3"
-                      name="goal3"
-                      value="Promote Sustainability" readonly
-                    />
-                  </div>
-    
-                  <!-- Goal 4 -->
-                  <div class="goal-card">
-                    <img src="images/goal.png" alt="Goal 4 Image" />
-                    <label for="goal4">Goal 4</label>
-                    <input type="text" 
-                      id="goal4" 
-                      name="goal4" 
-                      value="Zero Waste" readonly
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-    
-            <div class="section-divider"></div>
-    
-            <!-- Frustrations Section -->
-            <div class="profile-section frustrations-section">
-              <div class="section-content">
-                <h2><span class="section-icon">😤</span>Frustrations</h2>
-                <div class="form-group">
-                  <label for="frustration1">Frustration 1:</label>
-                  <input
-                    type="text"
-                    id="frustration1"
-                    name="frustration1"
-                    placeholder="Text Here"
-                  />
-                </div>
-                <div class="form-group">
-                  <label for="frustration2">Frustration 2:</label>
-                  <input
-                    type="text"
-                    id="frustration2"
-                    name="frustration2"
-                    placeholder="Text Here"
-                  />
-                </div>
-              </div>
-            </div>
-    
-            <div class="section-divider"></div>
-    
-            <!-- Experience Section -->
-            <div class="profile-section experience-section">
-              <div class="section-content">
-                <h2><span class="section-icon">💼</span>Experience</h2>
-                <div class="form-group">
-                  <label for="experience_brief">Brief Description:</label>
-                  <textarea id="experience_brief" name="experience_brief"></textarea>
-                </div>
-                <div class="experience-items">
-                  <div class="form-group">
-                    <label for="experience1">Experience 1:</label>
-                    <input
-                      type="text"
-                      id="experience1"
-                      name="experience1"
-                      placeholder="Text Here"
-                    />
-                  </div>
-                  <div class="form-group">
-                    <label for="experience2">Experience 2:</label>
-                    <input
-                      type="text"
-                      id="experience2"
-                      name="experience2"
-                      placeholder="Text Here"
-                    />
-                  </div>
-                  <div class="form-group">
-                    <label for="experience3">Experience 3:</label>
-                    <input
-                      type="text"
-                      id="experience3"
-                      name="experience3"
-                      placeholder="Text Here"
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-    
-            <div class="section-divider"></div>
-    
-            <!-- Volunteering Section -->
-            <div class="profile-section volunteering-section">
-              <div class="section-content">
-                <h2><span class="section-icon">🤝</span>Volunteering availability</h2>
-                <div class="form-group">
-                  <label for="volunteering">Availability:</label>
-                  <textarea id="volunteering" name="volunteering"></textarea>
-                </div>
-              </div>
-            </div>
-    
-            <div class="section-divider"></div>
-    
-            <!-- UN Goals Section -->
-            <div class="profile-section un-goals-section">
-              <div class="section-content">
-                <h2><span class="section-icon">🌍</span>UN goals I support</h2>
-                <div class="un-goals-table">
-                  <table>
-                    <tr>
-                      <th>Goal 1</th>
-                      <th>Goal 2</th>
-                    </tr>
-                    <tr>
-                      <td><input type="text" name="un_goal1" value="Life on Land" readonly/></td>
-                      <td><input type="text" name="un_goal2" value="Climate Action" readonly/></td>
-                    </tr>
-                    <tr>
-                      <td><input type="text" name="un_goal3" value="Sustainable Living" readonly/></td>
-                      <td><input type="text" name="un_goal4" value="Community Work" readonly/></td>
-                    </tr>
-                  </table>
-                </div>
-              </div>
-            </div>
-    
-            <div class="section-divider"></div>
-    
-            <!-- Skills Section -->
-            <div class="profile-section skills-section">
-              <div class="section-content">
-                <h2><span class="section-icon">🛠️</span>Skills</h2>
-                <div class="skills-form">
-                  <div class="form-group">
-                    <label for="skill1">Skill 1:</label>
-                    <div class="skill-input-container">
-                      <input
-                        type="text"
-                        id="skill1"
-                        name="skills[]"
-                        placeholder="Enter skill"
-                        class="skill-input"
-                      />
-                    </div>
-                  </div>
-                  <div class="form-group">
-                    <label for="skill2">Skill 2:</label>
-                    <div class="skill-input-container">
-                      <input
-                        type="text"
-                        id="skill2"
-                        name="skills[]"
-                        placeholder="Enter skill"
-                        class="skill-input"
-                      />
-                    </div>
-                  </div>
-                  <div class="form-group">
-                    <label for="skill3">Skill 3:</label>
-                    <div class="skill-input-container">
-                      <input
-                        type="text"
-                        id="skill3"
-                        name="skills[]"
-                        placeholder="Enter skill"
-                        class="skill-input"
-                      />
-                    </div>
-                  </div>
-                  <button type="button" class="add-skill-btn">
-                    + Add Another Skill
-                  </button>
-                </div>
-              </div>
-            </div>
-    
-            <div class="section-divider"></div>
-    
-            <!-- Contact Section -->
-            <div class="profile-section contact-section">
-              <div class="section-content">
-                <h2><span class="section-icon">📧</span>Contact Information</h2>
-                <div class="contact-form">
-                  <div class="form-group">
-                    <label for="contact_name">Name:</label>
-                    <input type="text" id="contact_name" name="contact_name" placeholder="Type your full name" />
-                  </div>
-                  <div class="form-group">
-                    <label for="contact_email">Email:</label>
-                    <input type="email" id="contact_email" name="contact_email" placeholder="Type your Email"/>
-                  </div>
-                  <div class="form-group">
-                    <label for="contact_number">Contact number:</label>
-                    <input type="tel" id="contact_number" name="contact_number" />
-                  </div>
-                  <div class="form-group full-width">
-                    <label for="contact_message">Message:</label>
-                    <textarea id="contact_message" name="contact_message" placeholder="Type a Message"></textarea>
-                  </div>
-                </div>
-              </div>
-            </div>
-    
-            <!-- Form Actions -->
-            <div class="profile-section actions-section">
-              <div class="form-actions">
-                <button type="submit" class="submit-btn">Save Profile</button>
-                <button type="reset" class="reset-btn">Reset Changes</button>
-              </div>
-            </div>
-          </form>
-        </div>
+<body>
+  <header>
+    <link rel="stylesheet" href="Global.css" />
+    <link rel="stylesheet" href="profile.css" />
+    <link rel="stylesheet" href="header.css" />
+    <div class="navbar">
+      <div class="logo-title">
+        <img src="images/logo.png" alt="Zero Hunger Logo" class="logo" />
+        <h1>Zero Hunger Sri Lanka</h1>
       </div>
-    </main>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="home.html" title="Goes to home page">Home</a></li>
+          <li>
+            <a href="volunteer.html" title="Goes to Volunteer page">Volunteer</a>
+          </li>
+          <li><a href="table.html" title="Goes to table page">Table</a></li>
+          <li>
+            <a href="feedback.html" title="Goes feedback page">Feedback</a>
+          </li>
+          <li>
+            <a href="profile.html" class="active" title="Goes to profile page">User Profile</a>
+          </li>
+          <li><a href="team.html" title="Goes to team page">Team</a></li>
+          <li>
+            <a href="sitemap.html" title="Goes to sitemap page">Sitemap</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main class="wrapper">
+    <div class="profile-main-container">
+      <div class="profile-container">
+        <form class="profile-form" action="#" method="post">
+          <!-- Profile Header Section -->
+          <div class="profile-section profile-header-section">
+            <div class="profile-header">
+              <div class="profile-picture-container">
+                <div class="picture-wrapper">
+                  <img src="images/ST_4.jpg" alt="Profile Picture" class="profile-picture" />
+                  <label for="profile-pic-upload" class="upload-label">
+                    <i class="upload-icon">📷</i>
+                  </label>
+                  <input type="file" id="profile-pic-upload" name="profile_picture" accept="image/*" />
+                </div>
+              </div>
+              <div class="profile-text">
+                <div class="form-group">
+                  <label for="name">Full Name:</label>
+                  <input type="text" id="name" name="name" value="Sandaru Pasan" readonly required />
+                </div>
+                <div class="form-group">
+                  <label for="quote">Personal Quote:</label>
+                  <input type="text" id="quote" name="quote" placeholder="A quotation that captures your personality" />
+                </div>
+
+                <div class="info-row">
+                  <div class="form-group info-item">
+                    <label for="age">Age:</label>
+                    <input type="number" id="age" name="age" value="21" readonly class="info-input" />
+                  </div>
+
+                  <div class="form-group info-item">
+                    <label for="work">Work:</label>
+                    <input type="text" id="work" name="work" value="Student" readonly class="info-input" />
+                  </div>
+
+                  <div class="form-group info-item family-item">
+                    <label>Family Status:</label>
+                    <div class="radio-group">
+                      <input type="radio" id="single" name="family" value="Single" checked />
+                      <label for="single">Single</label>
+                      <input type="radio" id="married" name="family" value="Married" />
+                      <label for="married">Married</label>
+                    </div>
+                  </div>
+
+                  <div class="form-group info-item">
+                    <label for="location">Location:</label>
+                    <input type="text" id="location" name="location" value="Sri Lanka" readonly class="info-input" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="section-divider"></div>
+
+          <!-- Goals Section -->
+          <div class="profile-section goal-section">
+            <div class="goal-form">
+              <h2><span class="section-icon">🎯</span>Our Goals</h2>
+              <div class="goal-row">
+
+                <!-- Goal 1 -->
+                <div class="goal-card">
+                  <img src="images/goal.png" alt="Goal 1 Image" />
+                  <label for="goal1">Goal 1</label>
+                  <input type="text" id="goal1" name="goal1" value="End Hunger" readonly />
+                </div>
+
+                <!-- Goal 2 -->
+                <div class="goal-card">
+                  <img src="images/goal.png" alt="Goal 2 Image" />
+                  <label for="goal2">Goal 2</label>
+                  <input type="text" id="goal2" name="goal2" value="Improve Nutrition" readonly />
+                </div>
+
+                <!-- Goal 3 -->
+                <div class="goal-card">
+                  <img src="images/goal.png" alt="Goal 3 Image" />
+                  <label for="goal3">Goal 3</label>
+                  <input type="text" id="goal3" name="goal3" value="Promote Sustainability" readonly />
+                </div>
+
+                <!-- Goal 4 -->
+                <div class="goal-card">
+                  <img src="images/goal.png" alt="Goal 4 Image" />
+                  <label for="goal4">Goal 4</label>
+                  <input type="text" id="goal4" name="goal4" value="Zero Waste" readonly />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="section-divider"></div>
+
+          <!-- Frustrations Section -->
+          <div class="profile-section frustrations-section">
+            <div class="section-content">
+              <h2><span class="section-icon">😤</span>Frustrations</h2>
+              <div class="form-group">
+                <label for="frustration1">Frustration 1:</label>
+                <input type="text" id="frustration1" name="frustration1" placeholder="Text Here" />
+              </div>
+              <div class="form-group">
+                <label for="frustration2">Frustration 2:</label>
+                <input type="text" id="frustration2" name="frustration2" placeholder="Text Here" />
+              </div>
+            </div>
+          </div>
+
+          <div class="section-divider"></div>
+
+          <!-- Experience Section -->
+          <div class="profile-section experience-section">
+            <div class="section-content">
+              <h2><span class="section-icon">💼</span>Experience</h2>
+              <div class="form-group">
+                <label for="experience_brief">Brief Description:</label>
+                <textarea id="experience_brief" name="experience_brief"></textarea>
+              </div>
+              <div class="experience-items">
+                <div class="form-group">
+                  <label for="experience1">Experience 1:</label>
+                  <input type="text" id="experience1" name="experience1" placeholder="Text Here" />
+                </div>
+                <div class="form-group">
+                  <label for="experience2">Experience 2:</label>
+                  <input type="text" id="experience2" name="experience2" placeholder="Text Here" />
+                </div>
+                <div class="form-group">
+                  <label for="experience3">Experience 3:</label>
+                  <input type="text" id="experience3" name="experience3" placeholder="Text Here" />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="section-divider"></div>
+
+          <!-- Volunteering Section -->
+          <div class="profile-section volunteering-section">
+            <div class="section-content">
+              <h2><span class="section-icon">🤝</span>Volunteering availability</h2>
+              <div class="form-group">
+                <label for="volunteering">Availability:</label>
+                <textarea id="volunteering" name="volunteering"></textarea>
+              </div>
+            </div>
+          </div>
+
+          <div class="section-divider"></div>
+
+          <!-- UN Goals Section -->
+          <div class="profile-section un-goals-section">
+            <div class="section-content">
+              <h2><span class="section-icon">🌍</span>UN goals I support</h2>
+              <div class="un-goals-table">
+                <table>
+                  <tr>
+                    <th>Goal 1</th>
+                    <th>Goal 2</th>
+                  </tr>
+                  <tr>
+                    <td><input type="text" name="un_goal1" value="Life on Land" readonly /></td>
+                    <td><input type="text" name="un_goal2" value="Climate Action" readonly /></td>
+                  </tr>
+                  <tr>
+                    <td><input type="text" name="un_goal3" value="Sustainable Living" readonly /></td>
+                    <td><input type="text" name="un_goal4" value="Community Work" readonly /></td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+
+          <div class="section-divider"></div>
+
+          <!-- Skills Section -->
+          <div class="profile-section skills-section">
+            <div class="section-content">
+              <h2><span class="section-icon">🛠️</span>Skills</h2>
+              <div class="skills-form">
+                <div class="form-group">
+                  <label for="skill1">Skill 1:</label>
+                  <div class="skill-input-container">
+                    <input type="text" id="skill1" name="skills[]" placeholder="Enter skill" class="skill-input" />
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="skill2">Skill 2:</label>
+                  <div class="skill-input-container">
+                    <input type="text" id="skill2" name="skills[]" placeholder="Enter skill" class="skill-input" />
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="skill3">Skill 3:</label>
+                  <div class="skill-input-container">
+                    <input type="text" id="skill3" name="skills[]" placeholder="Enter skill" class="skill-input" />
+                  </div>
+                </div>
+                <button type="button" class="add-skill-btn">
+                  + Add Another Skill
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="section-divider"></div>
+
+          <!-- Contact Section -->
+          <div class="profile-section contact-section">
+            <div class="section-content">
+              <h2><span class="section-icon">📧</span>Contact Information</h2>
+              <div class="contact-form">
+                <div class="form-group">
+                  <label for="contact_name">Name:</label>
+                  <input type="text" id="contact_name" name="contact_name" placeholder="Type your full name" />
+                </div>
+                <div class="form-group">
+                  <label for="contact_email">Email:</label>
+                  <input type="email" id="contact_email" name="contact_email" placeholder="Type your Email" />
+                </div>
+                <div class="form-group">
+                  <label for="contact_number">Contact number:</label>
+                  <input type="tel" id="contact_number" name="contact_number" />
+                </div>
+                <div class="form-group full-width">
+                  <label for="contact_message">Message:</label>
+                  <textarea id="contact_message" name="contact_message" placeholder="Type a Message"></textarea>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Form Actions -->
+          <div class="profile-section actions-section">
+            <div class="form-actions">
+              <button type="submit" class="submit-btn">Save Profile</button>
+              <button type="reset" class="reset-btn">Reset Changes</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </main>
 
   <footer>
     <div class="footer-container">
