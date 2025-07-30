@@ -7,6 +7,27 @@
   <title>Zero Hunger Sri Lanka</title>
   <link rel="stylesheet" href="Global.css">
   <link rel="stylesheet" href="feedback.css">
+
+  <style>
+    .star-rating input[type="radio"] {
+      display: none;
+    }
+
+    .star-rating label {
+      font-size: 25px;
+      cursor: pointer;
+      transition: color 0.3s;
+    }
+  </style>
+
+  <script>
+    window.addEventListener('DOMContentLoaded', () => {
+      // Auto-fill current datetime for feedback
+      const feedbackDate = document.getElementById('Date');
+      const now = new Date();
+      feedbackDate.value = now.toISOString().slice(0, 16); // YYYY-MM-DDTHH:MM
+    });
+  </script>
 </head>
 
 <body>
@@ -65,7 +86,7 @@
         <textarea id="comment" name="comment" rows="3" cols="25" maxlength="300" placeholder="Enter your message here..." aria-label="Comment or Message"></textarea>
 
         <label for="Date">Date and Time of Feedback</label>
-        <input type="datetime-local" id="Date" name="feedbackDate" value="2025-06-19T10:00" aria-label="Feedback Date and Time">
+        <input type="datetime-local" id="Date" name="feedbackDate" aria-label="Feedback Date and Time">
 
         <label>Your Role in Fighting Hunger?</label>
         <div class="radio-group">
@@ -169,6 +190,45 @@
       &copy; 2025 Sathkara.lk Team. All rights reserved.
     </div>
   </footer>
+
+  <script>
+    // Confirm before submission
+    document.querySelector("form").addEventListener("submit", function (event) {
+      const confirmSubmit = confirm("Are you sure you want to submit this feedback?");
+      if (!confirmSubmit) {
+        event.preventDefault();
+      }
+    });
+
+    // Star rating hover effect
+    const stars = document.querySelectorAll('.star-rating label');
+    stars.forEach((star) => {
+      star.addEventListener('mouseover', function () {
+        let previousSiblings = [];
+        let current = this;
+        while (current.previousElementSibling) {
+          current = current.previousElementSibling;
+          if (current.tagName === "LABEL") previousSiblings.push(current);
+        }
+        this.style.color = 'gold';
+        previousSiblings.forEach(el => el.style.color = 'gold');
+      });
+
+      star.addEventListener('mouseout', function () {
+        stars.forEach(el => el.style.color = '');
+      });
+    });
+
+    // Phone number format validation
+    const phoneInput = document.getElementById("Telephone");
+    phoneInput.addEventListener("blur", function () {
+      const regex = /^[0-9]{3}-[0-9]{7}$/;
+      if (phoneInput.value && !regex.test(phoneInput.value)) {
+        alert("Please enter a valid telephone number in the format 123-1234567.");
+        phoneInput.focus();
+      }
+    });
+  </script>
 </body>
 
 </html>
